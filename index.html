@@ -6,40 +6,44 @@
     <title>jsd9-pickled-cat-html-site</title>
     <!-- Tailwind CSS v4.0 -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
   </head>
 
   <body>
     <!-- Header -->
-    <header class="flex justify-between p-8 border-b-1 border-b-slate-200">
+    <header class="flex justify-between items-center p-8 border-b-1 border-b-slate-200">
         <!-- Logo and Navigation Menu -->
         <nav class="flex justify-between">
             <h1 class="text-3xl italic font-bold">PICKLED-CAT</h1>
-            <ul class="flex">
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Our Product</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">FAQs</a></li>
+            <ul class="flex justify-center items-center ml-4">
+                <li class="ml-4"><a href="#">Category</a></li>
+                <li class="ml-4"><a href="#">Our Product</a></li>
+                <li class="ml-4"><a href="#">Contact</a></li>
+                <li class="ml-4"><a href="#">FAQs</a></li>
             </ul>
         </nav>
         <!-- Profile -->
-        <ul class="flex">
-            <li>
+        <ul class="flex justify-center items-center">
+            <li class="mr-4">
                 <a href="#">
-                    <img src="" alt="Cart">
+                    <img src="./assets/images/shop-icon.png" alt="Cart">
                 </a>
             </li>
-            <li>
+            <li class="mr-4">
                 <a href="#">
-                    <img src="" alt="Notification">
+                    <img src="./assets/images/notification-icon.png" alt="Notification">
                 </a>
             </li>
-            <li class="flex">
+            <li class="flex justify-center items-center">
                 <a href="#">
-                    <img src="" alt="Profile Image">
+                    <img src="./assets/images/profile-icon.png" alt="Profile Image">
                 </a>
-                <span>
+                <span class="pl-2">
                     <p>Hello!</p>
-                    <p>Alice IsHappy</p>
+                    <p>Scarlet Johnson</p>
                 </span>
             </li>
         </ul>
