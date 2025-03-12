@@ -1,0 +1,18 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    --font-family: 'Inter', sans-serif;
+    --primary-color-darkblue: #3A4980;
+    --secondary-color-lightpurple: #EEE0F9;
+    --secondary-color-lightgrey: #F4E8F3;
+    --secondary-color-lightergrey: #F3EFF6;
+    --primary-text-darkblue: #3A4980;
+    --secondary-text-darkblue: #1D364D;
+    --primary-text-grey: #667085;
+}
+
+.font-inter {
+    font-family: var(--font-family);
+}
