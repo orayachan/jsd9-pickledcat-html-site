@@ -1,49 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>jsd9-pickled-cat-html-site</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>JSD9 Pickled Cat HTML Site</title>
+
     <!-- Tailwind CSS v4.0 -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <style type="text/tailwindcss">
+      @theme {
+        --font-inter: Inter, serif;
+        --color-primary-50: #EAECF5;
+        --color-primary-100: #D3D6E3;
+        --color-primary-200:#B8BDD1; 
+        --color-primary-300:#9EA5C0; 
+        --color-primary-400:#838DAF; 
+        --color-primary-500:#6B76A0; 
+        --color-primary-600:#536090; 
+        --color-primary-700:#3B4A81; 
+        --color-primary: var(--color-primary-700);
+        --color-primary-800:#2B3760; 
+        --color-primary-900:#1D2540; 
+        --color-secondary-50: #F0EBF5;
+        --color-secondary-100: #DED1E8;
+        --color-secondary: var(--color-secondary-100);
+        --color-secondary-200:#C5B9CE; 
+        --color-secondary-300:#ADA2B5; 
+        --color-secondary-400:#938B9A; 
+        --color-secondary-500:#7D7582; 
+        --color-secondary-600:#65606A; 
+        --color-secondary-700:#504B54; 
+        --color-secondary-800:#3B373E; 
+        --color-secondary-900:#28252A; 
+      }
+    </style>
   </head>
 
   <body class="font-inter">
     <!-- Header -->
-    <header class="flex justify-between items-center p-8 border-b-1 border-b-slate-200">
-        <!-- Logo and Navigation Menu -->
-        <nav class="flex justify-between">
-            <h1 class="text-3xl italic font-bold">PICKLED-CAT</h1>
-            <ul class="flex justify-center items-center ml-4">
-                <li class="ml-4"><a href="#">Category</a></li>
-                <li class="ml-4"><a href="#">Our Product</a></li>
-                <li class="ml-4"><a href="#">Contact</a></li>
-                <li class="ml-4"><a href="#">FAQs</a></li>
-            </ul>
-        </nav>
-        <!-- Profile -->
-        <ul class="flex justify-center items-center">
-            <li class="mr-4">
-                <a href="#">
-                    <img src="./assets/images/shop-icon.png" alt="Cart">
-                </a>
-            </li>
-            <li class="mr-4">
-                <a href="#">
-                    <img src="./assets/images/notification-icon.png" alt="Notification">
-                </a>
-            </li>
-            <li class="flex justify-center items-center">
-                <a href="#">
-                    <img src="./assets/images/profile-icon.png" alt="Profile Image">
-                </a>
-                <span class="pl-2">
-                    <p>Hello!</p>
-                    <p class="font-semibold">Scarlet Johnson</p>
-                </span>
-            </li>
+    <header
+      class="flex justify-between items-center p-8 border-b-1 border-b-slate-200"
+    >
+      <!-- Logo and Navigation Menu -->
+      <nav class="flex justify-between">
+        <h1 class="text-3xl italic font-bold">PICKLED-CAT</h1>
+        <ul class="flex justify-center items-center ml-4">
+          <li class="ml-4"><a href="#">Category</a></li>
+          <li class="ml-4"><a href="#">Our Product</a></li>
+          <li class="ml-4"><a href="#">Contact</a></li>
+          <li class="ml-4"><a href="#">FAQs</a></li>
         </ul>
+      </nav>
+      <!-- Profile -->
+      <ul class="flex justify-center items-center">
+        <li class="mr-4">
+          <a href="#">
+            <img src="./assets/images/shop-icon.png" alt="Cart" />
+          </a>
+        </li>
+        <li class="mr-4">
+          <a href="#">
+            <img
+              src="./assets/images/notification-icon.png"
+              alt="Notification"
+            />
+          </a>
+        </li>
+        <li class="flex justify-center items-center">
+          <a href="#">
+            <img src="./assets/images/profile-icon.png" alt="Profile Image" />
+          </a>
+          <span class="pl-2">
+            <p>Hello!</p>
+            <p class="font-semibold">Scarlet Johnson</p>
+          </span>
+        </li>
+      </ul>
     </header>
 
     <main>
@@ -68,52 +101,59 @@
       <!-- Footer content -->
       <section class="grid grid-flow-col gap-4">
         <div class="">
-            <h2 class="text-xl font-bold italic mb-5">PICKLED-CAT</h2>
-            <h3 class="font-semibold pl-1">About Us</h3>
-            <p class="pl-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cumque esse vitae, pariatur nam enim eligendi dolorem sit amet sunt reprehenderit ducimus est a ut Dolore necessitatibus obcaecati molestias commodi</p>
-            <ul class="flex justify-start items-center mt-5">
-                <li class="p-1">
-                    <a href="#">
-                        <img src="./assets/images/x-logo.png" alt="X">
-                    </a>
-                </li>
-                <li class="p-1">
-                    <a href="#">
-                        <img src="./assets/images/ig-logo.png" alt="Instagram">
-                    </a>
-                </li>
-                <li class="p-1">
-                    <a href="#">
-                        <img src="./assets/images/youtube-logo.png" alt="Youtube">
-                    </a>
-                </li>
-                <li class="p-1">
-                    <a href="#">
-                        <img src="./assets/images/linkedin-logo.png" alt="Linkedin">
-                    </a>
-                </li>
-            </ul>
+          <h2 class="text-xl font-bold italic mb-5">PICKLED-CAT</h2>
+          <h3 class="font-semibold pl-1">About Us</h3>
+          <p class="pl-1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cumque
+            esse vitae, pariatur nam enim eligendi dolorem sit amet sunt
+            reprehenderit ducimus est a ut Dolore necessitatibus obcaecati
+            molestias commodi
+          </p>
+          <ul class="flex justify-start items-center mt-5">
+            <li class="p-1">
+              <a href="#">
+                <img src="./assets/images/x-logo.png" alt="X" />
+              </a>
+            </li>
+            <li class="p-1">
+              <a href="#">
+                <img src="./assets/images/ig-logo.png" alt="Instagram" />
+              </a>
+            </li>
+            <li class="p-1">
+              <a href="#">
+                <img src="./assets/images/youtube-logo.png" alt="Youtube" />
+              </a>
+            </li>
+            <li class="p-1">
+              <a href="#">
+                <img src="./assets/images/linkedin-logo.png" alt="Linkedin" />
+              </a>
+            </li>
+          </ul>
         </div>
         <ul class="">
-            <h3 class="font-semibold">Service</h3>
-            <li><a href="#">Our products</a></li>
-            <li><a href="#">Shipping</a></li>
-            <li><a href="#">Payment options</a></li>
-            <li><a href="#">Term of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+          <h3 class="font-semibold">Service</h3>
+          <li><a href="#">Our products</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Payment options</a></li>
+          <li><a href="#">Term of service</a></li>
+          <li><a href="#">Privacy policy</a></li>
         </ul>
         <ul class="">
-            <h3 class="font-semibold">Company</h3>
-            <li><a href="#">Our story</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Contact us</a></li>
+          <h3 class="font-semibold">Company</h3>
+          <li><a href="#">Our story</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Contact us</a></li>
         </ul>
       </section>
       <!-- Copyright -->
       <ul class="flex justify-center items-start mt-5 text-sm">
-        <li class="list-none pr-2">Copyright &copy; 2025 <span class="italic">PICKLED-CAT</span></li>
-        <li class="list-none">⚡︎  All right Reserved</li>
+        <li class="list-none pr-2">
+          Copyright &copy; 2025 <span class="italic">PICKLED-CAT</span>
+        </li>
+        <li class="list-none">⚡︎ All right Reserved</li>
       </ul>
     </footer>
   </body>
