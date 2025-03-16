@@ -43,28 +43,30 @@
     <header>
       <!-- HEADER Mobile -->
       <nav
-        class="grid grid-cols-6 grid-rows-1 items-center justify-evenly gap-10 p-8 lg:hidden"
+        class="flex justify-between items-center gap-4 lg:hidden pt-4 pr-8 pb-4 pl-8 border-b-1 border-b-slate-200"
       >
         <h1 class="col-span-3 text-xl font-bold italic">PICKLED-CAT</h1>
-        <div class="col-start-4">
-          <a href="#">
-            <img src="./assets/images/m-icon-search.png" alt="search" />
-          </a>
-        </div>
-        <div class="col-start-5">
-          <a href="#">
-            <img src="./assets/images/m-icon-cart.png" alt="cart" />
-          </a>
-        </div>
-        <div class="col-start-6">
-          <a href="#">
-            <img src="./assets/images/m-icon-menu.png" alt="menu" />
-          </a>
-        </div>
+        <ul class="flex ">
+          <li class="pl-4">
+            <a href="#">
+              <img src="./assets/images/m-icon-search.png" alt="search" />
+            </a>
+          </li>
+          <li class="pl-4">
+            <a href="#">
+              <img src="./assets/images/m-icon-cart.png" alt="cart" />
+            </a>
+          </li>
+          <li class="pl-4">
+            <a href="#">
+              <img src="./assets/images/m-icon-menu.png" alt="menu" />
+            </a>
+          </>
+        </ul>
       </nav>
       <!-- HEADER Tablet & Desktop -->
       <section
-        class="border-b-1 hidden grid-cols-12 grid-rows-1 items-center justify-between gap-4 border-b-slate-200 p-8 lg:grid"
+        class="hidden lg:flex items-center justify-between gap-4 p-8 border-b-1 border-b-slate-200"
       >
         <!-- Logo -->
         <div class="col-span-2">
@@ -72,7 +74,7 @@
         </div>
         <!-- Navigation Menu -->
         <nav class="col-span-6">
-          <ul class="ml-2 flex items-center justify-center">
+          <ul class="ml-2 flex items-center justify-start">
             <li class="ml-4"><a href="#">Category</a></li>
             <li class="ml-4"><a href="#">Our Product</a></li>
             <li class="ml-4"><a href="#">Contact</a></li>
@@ -207,7 +209,7 @@
       </ul>
       <!-- Copyright -->
       <ul
-        class="mt-5 flex flex-row items-start text-sm lg:col-span-4 lg:col-start-1"
+        class="flex flex-row items-start mt-5 text-sm lg:col-span-4 lg:col-start-1"
       >
         <li class="list-none pr-2">
           Copyright &copy; 2025 <span class="italic">PICKLED-CAT</span>
