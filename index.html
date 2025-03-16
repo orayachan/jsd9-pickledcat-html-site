@@ -10,29 +10,30 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <style type="text/tailwindcss">
       @theme {
+        --breakpoint-xs: 37rem;
         --font-inter: Inter, serif;
-        --color-primary-50: #EAECF5;
-        --color-primary-100: #D3D6E3;
-        --color-primary-200:#B8BDD1; 
-        --color-primary-300:#9EA5C0; 
-        --color-primary-400:#838DAF; 
-        --color-primary-500:#6B76A0; 
-        --color-primary-600:#536090; 
-        --color-primary-700:#3B4A81; 
+        --color-primary-50: #eaecf5;
+        --color-primary-100: #d3d6e3;
+        --color-primary-200: #b8bdd1;
+        --color-primary-300: #9ea5c0;
+        --color-primary-400: #838daf;
+        --color-primary-500: #6b76a0;
+        --color-primary-600: #536090;
+        --color-primary-700: #3b4a81;
         --color-primary: var(--color-primary-700);
-        --color-primary-800:#2B3760; 
-        --color-primary-900:#1D2540; 
-        --color-secondary-50: #F0EBF5;
-        --color-secondary-100: #DED1E8;
+        --color-primary-800: #2b3760;
+        --color-primary-900: #1d2540;
+        --color-secondary-50: #f0ebf5;
+        --color-secondary-100: #ded1e8;
         --color-secondary: var(--color-secondary-100);
-        --color-secondary-200:#C5B9CE; 
-        --color-secondary-300:#ADA2B5; 
-        --color-secondary-400:#938B9A; 
-        --color-secondary-500:#7D7582; 
-        --color-secondary-600:#65606A; 
-        --color-secondary-700:#504B54; 
-        --color-secondary-800:#3B373E; 
-        --color-secondary-900:#28252A; 
+        --color-secondary-200: #c5b9ce;
+        --color-secondary-300: #ada2b5;
+        --color-secondary-400: #938b9a;
+        --color-secondary-500: #7d7582;
+        --color-secondary-600: #65606a;
+        --color-secondary-700: #504b54;
+        --color-secondary-800: #3b373e;
+        --color-secondary-900: #28252a;
       }
     </style>
   </head>
@@ -41,69 +42,103 @@
     <!-- Header -->
     <header>
       <!-- HEADER Mobile -->
-      <nav class="grid grid-cols-6 grid-rows-1 gap-10 p-8 justify-evenly items-center lg:hidden">
-          <h1 class="col-span-3 text-xl italic font-bold">
-              PICKLED-CAT
-          </h1>
-          <div class="col-start-4">
-              <a href="#">
-                  <img src="./assets/images/m-icon-search.png" alt="search" />
-              </a>
-          </div>
-          <div class="col-start-5">
-              <a href="#">
-                  <img src="./assets/images/m-icon-cart.png" alt="cart" />
-              </a>
-          </div>
-          <div class="col-start-6">
-              <a href="#">
-                  <img src="./assets/images/m-icon-menu.png" alt="menu" />
-              </a>
-          </div>
+      <nav
+        class="grid grid-cols-6 grid-rows-1 items-center justify-evenly gap-10 p-8 lg:hidden"
+      >
+        <h1 class="col-span-3 text-xl font-bold italic">PICKLED-CAT</h1>
+        <div class="col-start-4">
+          <a href="#">
+            <img src="./assets/images/m-icon-search.png" alt="search" />
+          </a>
+        </div>
+        <div class="col-start-5">
+          <a href="#">
+            <img src="./assets/images/m-icon-cart.png" alt="cart" />
+          </a>
+        </div>
+        <div class="col-start-6">
+          <a href="#">
+            <img src="./assets/images/m-icon-menu.png" alt="menu" />
+          </a>
+        </div>
       </nav>
       <!-- HEADER Tablet & Desktop -->
-      <section class="hidden lg:grid grid-cols-12 grid-rows-1 gap-4 justify-between items-center p-8 border-b-1 border-b-slate-200">
-          <!-- Logo -->
-          <div class="col-span-2">
-              <h1 class="text-3xl italic font-bold">PICKLED-CAT</h1>
-          </div>
-          <!-- Navigation Menu -->
-          <nav class="col-span-6">
-              <ul class="flex justify-center items-center ml-2">
-                  <li class="ml-4"><a href="#">Category</a></li>
-                  <li class="ml-4"><a href="#">Our Product</a></li>
-                  <li class="ml-4"><a href="#">Contact</a></li>
-                  <li class="ml-4"><a href="#">FAQs</a></li>
-              </ul>
-          </nav>
-          <!-- Profile -->
-          <ul class="col-span-4 col-start-9 flex justify-end items-center">
-              <li class="mr-4">
-                  <a href="#">
-                  <img src="./assets/images/shop-icon.png" alt="Cart" />
-                  </a>
-              </li>
-              <li class="mr-4">
-                  <a href="#">
-                  <img src="./assets/images/notification-icon.png"alt="Notification"/>
-                  </a>
-              </li>
-              <li class="flex justify-center items-center">
-                  <a href="#">
-                  <img src="./assets/images/profile-icon.png" alt="Profile Image" />
-                  </a>
-                  <span class="pl-2">
-                  <p>Hello!</p>
-                  <p class="font-semibold">Scarlet Johnson</p>
-                  </span>
-              </li>
+      <section
+        class="border-b-1 hidden grid-cols-12 grid-rows-1 items-center justify-between gap-4 border-b-slate-200 p-8 lg:grid"
+      >
+        <!-- Logo -->
+        <div class="col-span-2">
+          <h1 class="text-3xl font-bold italic">PICKLED-CAT</h1>
+        </div>
+        <!-- Navigation Menu -->
+        <nav class="col-span-6">
+          <ul class="ml-2 flex items-center justify-center">
+            <li class="ml-4"><a href="#">Category</a></li>
+            <li class="ml-4"><a href="#">Our Product</a></li>
+            <li class="ml-4"><a href="#">Contact</a></li>
+            <li class="ml-4"><a href="#">FAQs</a></li>
           </ul>
+        </nav>
+        <!-- Profile -->
+        <ul class="col-span-4 col-start-9 flex items-center justify-end">
+          <li class="mr-4">
+            <a href="#">
+              <img src="./assets/images/shop-icon.png" alt="Cart" />
+            </a>
+          </li>
+          <li class="mr-4">
+            <a href="#">
+              <img
+                src="./assets/images/notification-icon.png"
+                alt="Notification"
+              />
+            </a>
+          </li>
+          <li class="flex items-center justify-center">
+            <a href="#">
+              <img src="./assets/images/profile-icon.png" alt="Profile Image" />
+            </a>
+            <span class="pl-2">
+              <p>Hello!</p>
+              <p class="font-semibold">Scarlet Johnson</p>
+            </span>
+          </li>
+        </ul>
       </section>
     </header>
 
     <main>
       <!-- Hero Section -->
-      <section class=""></section>
+      <section class="pb-16 pt-8 max-xl:px-8 lg:pt-16">
+        <div
+          class="bg-secondary relative mx-auto grid max-w-screen-xl justify-center rounded-xl border-red-300 px-8 shadow-xl sm:py-16 md:grid-cols-2 lg:px-16"
+        >
+          <div
+            class="max-w-prose space-y-8 max-xl:pb-24 max-lg:z-[1] max-md:text-center max-sm:pt-16 sm:content-center"
+          >
+            <h1
+              class="text-primary text-4xl font-medium leading-tight xl:text-5xl xl:leading-snug"
+            >
+              Grab Up to 50% discount on Pickled Cat Jars!
+            </h1>
+            <p class="text-lg text-zinc-700 xl:text-2xl">
+              Aqui, você encontrará respostas para todas as suas dúvidas, desde
+              a escolha da melhor ração até dicas essenciais para garantir o
+              bem-estar do seu companheiro peludo.
+            </p>
+            <button
+              class="bg-primary w-full rounded-full border-none py-2 text-lg text-white sm:w-7/12 xl:px-24 xl:py-3 xl:text-2xl"
+            >
+              Buy now!
+            </button>
+          </div>
+          <img
+            src="assets/images/big-grey-cat.svg"
+            alt=""
+            class="xs:h-full absolute bottom-0 max-md:opacity-30 sm:right-0 md:-right-8 lg:right-16 lg:h-[calc(100%+4rem)]"
+          />
+        </div>
+      </section>
 
       <!-- Product Categories -->
       <section class=""></section>
@@ -119,18 +154,20 @@
     </main>
 
     <!-- Footer -->
-    <footer class="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-1 gap-4 p-8 bg-violet-100">
+    <footer
+      class="grid grid-cols-1 gap-4 bg-violet-100 p-8 lg:grid-cols-4 lg:grid-rows-1"
+    >
       <!-- Footer content -->
       <div class="lg:col-span2 row-span-1">
-        <h2 class="text-xl font-bold italic mb-5">PICKLED-CAT</h2>
-        <h3 class="font-semibold pl-1">About Us</h3>
+        <h2 class="mb-5 text-xl font-bold italic">PICKLED-CAT</h2>
+        <h3 class="pl-1 font-semibold">About Us</h3>
         <p class="pl-1">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cumque
           esse vitae, pariatur nam enim eligendi dolorem sit amet sunt
           reprehenderit ducimus est a ut Dolore necessitatibus obcaecati
           molestias commodi
         </p>
-        <ul class="flex justify-start items-center mt-5">
+        <ul class="mt-5 flex items-center justify-start">
           <li class="p-1">
             <a href="#">
               <img src="./assets/images/x-logo.png" alt="X" />
@@ -153,7 +190,7 @@
           </li>
         </ul>
       </div>
-      <ul class="lg:col-start-3 col-span-1 row-span-1">
+      <ul class="col-span-1 row-span-1 lg:col-start-3">
         <h3 class="font-semibold">Service</h3>
         <li><a href="#">Our products</a></li>
         <li><a href="#">Shipping</a></li>
@@ -161,7 +198,7 @@
         <li><a href="#">Term of service</a></li>
         <li><a href="#">Privacy policy</a></li>
       </ul>
-      <ul class="lg:col-start-4 col-span-1 row-span-1">
+      <ul class="col-span-1 row-span-1 lg:col-start-4">
         <h3 class="font-semibold">Company</h3>
         <li><a href="#">Our story</a></li>
         <li><a href="#">Community</a></li>
@@ -169,13 +206,15 @@
         <li><a href="#">Contact us</a></li>
       </ul>
       <!-- Copyright -->
-      <ul class="lg:col-start-1 lg:col-span-4 flex flex-row items-start mt-5 text-sm">
+      <ul
+        class="mt-5 flex flex-row items-start text-sm lg:col-span-4 lg:col-start-1"
+      >
         <li class="list-none pr-2">
           Copyright &copy; 2025 <span class="italic">PICKLED-CAT</span>
         </li>
-        <li class="list-none hidden lg:inline-block ">⚡︎ All right Reserved</li>
+        <li class="hidden list-none lg:inline-block">⚡︎ All right Reserved</li>
       </ul>
     </footer>
   </body>
-
 </html>
+
