@@ -39,42 +39,66 @@
 
   <body class="font-inter">
     <!-- Header -->
-    <header class="flex flex-wrap justify-between items-center p-8 border-b-1 border-b-slate-200">
-      <!-- Logo and Navigation Menu -->
-      <nav class="flex justify-between">
-        <h1 class="text-3xl italic font-bold">PICKLED-CAT</h1>
-        <ul class="flex justify-center items-center ml-4">
-          <li class="ml-4"><a href="#">Category</a></li>
-          <li class="ml-4"><a href="#">Our Product</a></li>
-          <li class="ml-4"><a href="#">Contact</a></li>
-          <li class="ml-4"><a href="#">FAQs</a></li>
-        </ul>
+    <header>
+      <!-- HEADER Mobile -->
+      <nav class="grid grid-cols-6 grid-rows-1 gap-10 p-8 justify-evenly items-center lg:hidden">
+          <h1 class="col-span-3 text-xl italic font-bold">
+              PICKLED-CAT
+          </h1>
+          <div class="col-start-4">
+              <a href="#">
+                  <img src="./assets/images/m-icon-search.png" alt="search" />
+              </a>
+          </div>
+          <div class="col-start-5">
+              <a href="#">
+                  <img src="./assets/images/m-icon-cart.png" alt="cart" />
+              </a>
+          </div>
+          <div class="col-start-6">
+              <a href="#">
+                  <img src="./assets/images/m-icon-menu.png" alt="menu" />
+              </a>
+          </div>
       </nav>
-      <!-- Profile -->
-      <ul class="flex justify-center items-center">
-        <li class="mr-4">
-          <a href="#">
-            <img src="./assets/images/shop-icon.png" alt="Cart" />
-          </a>
-        </li>
-        <li class="mr-4">
-          <a href="#">
-            <img
-              src="./assets/images/notification-icon.png"
-              alt="Notification"
-            />
-          </a>
-        </li>
-        <li class="flex justify-center items-center">
-          <a href="#">
-            <img src="./assets/images/profile-icon.png" alt="Profile Image" />
-          </a>
-          <span class="pl-2">
-            <p>Hello!</p>
-            <p class="font-semibold">Scarlet Johnson</p>
-          </span>
-        </li>
-      </ul>
+      <!-- HEADER Tablet & Desktop -->
+      <section class="hidden lg:grid grid-cols-12 grid-rows-1 gap-4 justify-between items-center p-8 border-b-1 border-b-slate-200">
+          <!-- Logo -->
+          <div class="col-span-2">
+              <h1 class="text-3xl italic font-bold">PICKLED-CAT</h1>
+          </div>
+          <!-- Navigation Menu -->
+          <nav class="col-span-6">
+              <ul class="flex justify-center items-center ml-2">
+                  <li class="ml-4"><a href="#">Category</a></li>
+                  <li class="ml-4"><a href="#">Our Product</a></li>
+                  <li class="ml-4"><a href="#">Contact</a></li>
+                  <li class="ml-4"><a href="#">FAQs</a></li>
+              </ul>
+          </nav>
+          <!-- Profile -->
+          <ul class="col-span-4 col-start-9 flex justify-end items-center">
+              <li class="mr-4">
+                  <a href="#">
+                  <img src="./assets/images/shop-icon.png" alt="Cart" />
+                  </a>
+              </li>
+              <li class="mr-4">
+                  <a href="#">
+                  <img src="./assets/images/notification-icon.png"alt="Notification"/>
+                  </a>
+              </li>
+              <li class="flex justify-center items-center">
+                  <a href="#">
+                  <img src="./assets/images/profile-icon.png" alt="Profile Image" />
+                  </a>
+                  <span class="pl-2">
+                  <p>Hello!</p>
+                  <p class="font-semibold">Scarlet Johnson</p>
+                  </span>
+              </li>
+          </ul>
+      </section>
     </header>
 
     <main>
