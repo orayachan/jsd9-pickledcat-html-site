@@ -6,83 +6,116 @@
     <title>develop-gun</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
+    <style type="text/tailwindcss">
+        @theme {
+          --font-inter: Inter, serif;
+          --color-primary-50: #EAECF5;
+          --color-primary-100: #D3D6E3;
+          --color-primary-200:#B8BDD1; 
+          --color-primary-300:#9EA5C0; 
+          --color-primary-400:#838DAF; 
+          --color-primary-500:#6B76A0; 
+          --color-primary-600:#536090; 
+          --color-primary-700:#3B4A81; 
+          --color-primary: var(--color-primary-700);
+          --color-primary-800:#2B3760; 
+          --color-primary-900:#1D2540; 
+          --color-secondary-50: #F0EBF5;
+          --color-secondary-100: #DED1E8;
+          --color-secondary: var(--color-secondary-100);
+          --color-secondary-200:#C5B9CE; 
+          --color-secondary-300:#ADA2B5; 
+          --color-secondary-400:#938B9A; 
+          --color-secondary-500:#7D7582; 
+          --color-secondary-600:#65606A; 
+          --color-secondary-700:#504B54; 
+          --color-secondary-800:#3B373E; 
+          --color-secondary-900:#28252A; 
+        }
+      </style>
 </head>
 <body>
-    <section class="bg-white border-2 border-black m-4 rounded-3xl">
-        <div class="mt-2 mb-2 ml-2 mr-2">
-            <h2 class="text-center font-semibold text-4xl">FAQs</h2>
+    <!-- FAQs -->
+    <section class="bg-white m-4">
+
+        <!-- Title -->
+        <div class="">
+            <h2 class="text-left m-6 font-bold text-4xl" style="color: #3A4980;">FAQs</h2>
         </div>
 
-        <div class="flex flex-col gap-2 p-2">
-            <div class="border-2 border-black rounded-3xl">
+        <!-- List -->
+        <div class="flex flex-col gap-2 ml-4 mr-4 mb-4">
+            <div class="bg-secondary-50 border-2 border-black rounded-3xl">
                 <input type="checkbox" id="faq1" class="hidden peer">
                 <label for="faq1" class="cursor-pointer py-3 text-lg font-medium text-gray-700 flex justify-between items-center peer-checked:[&>svg]:rotate-180">
-                    <span class="ml-2">How to contact us ?</span>
+                    <span class="ml-4">How to contact us ?</span>
 
-                    <svg class="w-5 h-5 m-2 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="w-5 h-5 mr-4 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </label>
 
-                <div class="hidden peer-checked:block p-3 text-gray-600 border border-black m-2 rounded-3xl">
+                <div class="hidden peer-checked:block p-4 bg-white text-gray-600 border border-black m-2 rounded-3xl">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia ducimus molestias accusantium labore quidem eius recusandae velit ea exercitationem perspiciatis dolorum, beatae, obcaecati, iusto ipsum adipisci non corporis nostrum.
                 </div>
             </div>
 
-            <div class="border-2 border-black rounded-3xl">
+            <div class="bg-secondary-50 border-2 border-black rounded-3xl">
                 <input type="checkbox" id="faq2" class="hidden peer">
                 <label for="faq2" class="cursor-pointer py-3 text-lg font-medium text-gray-700 flex justify-between items-center peer-checked:[&>svg]:rotate-180">
-                    <span class="ml-2">Pickled Cat stands for ?</span>
+                    <span class="ml-4">Pickled Cat stands for ?</span>
                     
-                    <svg class="w-5 h-5 m-2 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="w-5 h-5 mr-4 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </label>
 
-                <div class="hidden peer-checked:block p-3 text-gray-600 border border-black m-2 rounded-3xl">
+                <div class="hidden peer-checked:block p-4 bg-white text-gray-600 border border-black m-2 rounded-3xl">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia ducimus molestias accusantium labore quidem eius recusandae velit ea exercitationem perspiciatis dolorum, beatae, obcaecati, iusto ipsum adipisci non corporis nostrum.
                 </div>
             </div>
 
-            <div class="border-2 border-black rounded-3xl">
+            <div class="bg-secondary-50 border-2 border-black rounded-3xl">
                 <input type="checkbox" id="faq3" class="hidden peer">
                 <label for="faq3" class="cursor-pointer py-3 text-lg font-medium text-gray-700 flex justify-between items-center peer-checked:[&>svg]:rotate-180">
-                    <span class="ml-2">Promotion and Coupon ?</span>
+                    <span class="ml-4">Promotion and Coupon ?</span>
                     
-                    <svg class="w-5 h-5 m-2 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="w-5 h-5 mr-4 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </label>
 
-                <div class="hidden peer-checked:block p-3 text-gray-600 border border-black m-2 rounded-3xl">
+                <div class="hidden peer-checked:block p-4 bg-white text-gray-600 border border-black m-2 rounded-3xl">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia ducimus molestias accusantium labore quidem eius recusandae velit ea exercitationem perspiciatis dolorum, beatae, obcaecati, iusto ipsum adipisci non corporis nostrum.
                 </div>
             </div>
 
-            <div class="border-2 border-black rounded-3xl">
+            <div class="bg-secondary-50 border-2 border-black rounded-3xl">
                 <input type="checkbox" id="faq4" class="hidden peer">
                 <label for="faq4" class="cursor-pointer py-3 text-lg font-medium text-gray-700 flex justify-between items-center peer-checked:[&>svg]:rotate-180">
-                    <span class="ml-2">Do you have a physical store?</span>
+                    <span class="ml-4">Do you have a physical store ?</span>
                     
-                    <svg class="w-5 h-5 m-2 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="w-5 h-5 mr-4 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                     </svg>
                 </label>
 
-                <div class="hidden peer-checked:block p-3 text-gray-600 border border-black m-2 rounded-3xl">
+                <div class="hidden peer-checked:block p-4 bg-white text-gray-600 border border-black m-2 rounded-3xl">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia ducimus molestias accusantium labore quidem eius recusandae velit ea exercitationem perspiciatis dolorum, beatae, obcaecati, iusto ipsum adipisci non corporis nostrum.
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-white border-2 border-black m-4 rounded-3xl">
-        <div class="flex flex-col items-center">
-            <h2 class="font-semibold text-4xl">Contact Us</h2>
-            <h3 class="font-semibold text-2xl">Pickled Cat</h3>
+    <!-- Contact Us -->
+    <section class="bg-white m-4">
+        <!-- Title -->
+        <div class="flex flex-col items-start m-6">
+            <h2 class="font-bold text-4xl" style="color: #3A4980;">Contact Us</h2>
+            <!-- <h3 class="font-semibold text-2xl">Pickled Cat</h3> -->
         </div>
 
-        <div class="flex flex-row justify-center gap-2 m-4">
+        <div class="flex flex-col lg:flex-row justify-center gap-2 m-4">
             <div class="flex-[1] border-2 border-black rounded-3xl">
                 <div class="m-4 flex flex-col justify-center gap-2">
                     <div class="flex flex-row gap-4">
@@ -114,9 +147,10 @@
             </div>
         </div>
 
-        <div class="bg-gray-300 flex justify-center border border-2xl border-black m-4 p-4 rounded-3xl">
+        <!-- Map -->
+        <div class="bg-secondary-50 flex justify-center border border-2xl border-black m-4 p-4 rounded-3xl">
             <iframe
-                class="w-full max-w-[1300px] h-[450px] max-h-[120000px] border-0"
+                class="w-full max-w-[1280px] h-[450px] max-h-[1280px] border-0"
                 loading="lazy"
                 allowfullscreen 
                 referrerpolicy="no-referrer-when-downgrade"
