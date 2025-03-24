@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/pickled-cat-logo.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--App-->
+    <title>JSD9 Pickled Cat Website</title>
+
+    <!--Google Fonts and Tailwind CSS-->
+    <link href="/src/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- HEADER Mobile -->
+      <nav
+        class="flex items-center justify-between gap-4 border-b-1 border-b-slate-200 pt-4 pr-8 pb-4 pl-8 lg:hidden"
+      >
+        <h1 class="col-span-3 text-xl font-bold italic">PICKLED-CAT</h1>
+        <ul class="flex">
+          <li class="pl-4">
+            <a href="#">
+              <img src="./assets/images/m-icon-search.png" alt="search" />
+            </a>
+          </li>
+          <li class="pl-4">
+            <a href="#">
+              <img src="./assets/images/m-icon-cart.png" alt="cart" />
+            </a>
+          </li>
+          <li class="pl-4">
+            <a href="#">
+              <img src="./assets/images/m-icon-menu.png" alt="menu" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- HEADER Tablet & Desktop -->
+      <section
+        class="hidden items-center justify-between gap-4 border-b-1 border-b-slate-200 p-8 lg:flex"
+      >
+        <!-- Logo -->
+        <div class="col-span-2">
+          <h1 class="text-3xl font-bold italic">PICKLED-CAT</h1>
+        </div>
+        <!-- Navigation Menu -->
+        <nav class="col-span-6">
+          <ul class="ml-2 flex items-center justify-start">
+            <li class="ml-4"><a href="#">Category</a></li>
+            <li class="ml-4"><a href="#">Our Product</a></li>
+            <li class="ml-4"><a href="#">Contact</a></li>
+            <li class="ml-4"><a href="#">FAQs</a></li>
+          </ul>
+        </nav>
+        <!-- Profile -->
+        <ul class="col-span-4 col-start-9 flex items-center justify-end">
+          <li class="mr-4">
+            <a href="#">
+              <img src="./assets/images/shop-icon.png" alt="Cart" />
+            </a>
+          </li>
+          <li class="mr-4">
+            <a href="#">
+              <img
+                src="./assets/images/notification-icon.png"
+                alt="Notification"
+              />
+            </a>
+          </li>
+          <li class="flex items-center justify-center">
+            <a href="#">
+              <img src="./assets/images/profile-icon.png" alt="Profile Image" />
+            </a>
+            <span class="pl-2">
+              <p>Hello!</p>
+              <p class="font-semibold">Scarlet Johnson</p>
+            </span>
+          </li>
+        </ul>
+      </section>
+    </header>
+
+    <!-- Your content here -->
+
+    <!-- Footer -->
+    <footer
+      class="grid grid-cols-1 gap-4 bg-violet-100 p-8 lg:grid-cols-4 lg:grid-rows-1"
+    >
+      <!-- Footer content -->
+      <div class="lg:col-span2 row-span-1">
+        <h2 class="mb-5 text-xl font-bold italic">PICKLED-CAT</h2>
+        <h3 class="pl-1 font-semibold">About Us</h3>
+        <p class="pl-1">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cumque
+          esse vitae, pariatur nam enim eligendi dolorem sit amet sunt
+          reprehenderit ducimus est a ut Dolore necessitatibus obcaecati
+          molestias commodi
+        </p>
+        <ul class="mt-5 flex items-center justify-start">
+          <li class="p-1">
+            <a href="#">
+              <img src="./assets/images/x-logo.png" alt="X" />
+            </a>
+          </li>
+          <li class="p-1">
+            <a href="#">
+              <img src="./assets/images/ig-logo.png" alt="Instagram" />
+            </a>
+          </li>
+          <li class="p-1">
+            <a href="#">
+              <img src="./assets/images/youtube-logo.png" alt="Youtube" />
+            </a>
+          </li>
+          <li class="p-1">
+            <a href="#">
+              <img src="./assets/images/linkedin-logo.png" alt="Linkedin" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="col-span-1 row-span-1 lg:col-start-3">
+        <h3 class="font-semibold">Service</h3>
+        <li><a href="#">Our products</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Payment options</a></li>
+        <li><a href="#">Term of service</a></li>
+        <li><a href="#">Privacy policy</a></li>
+      </ul>
+      <ul class="col-span-1 row-span-1 lg:col-start-4">
+        <h3 class="font-semibold">Company</h3>
+        <li><a href="#">Our story</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <!-- Copyright -->
+      <ul
+        class="mt-5 flex flex-row items-start text-sm lg:col-span-4 lg:col-start-1"
+      >
+        <li class="list-none pr-2">
+          Copyright &copy; 2025 <span class="italic">PICKLED-CAT</span>
+        </li>
+        <li class="hidden list-none lg:inline-block">⚡︎ All right Reserved</li>
+      </ul>
+    </footer>
+  </body>
+</html>
