@@ -2,18 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--App-->
+    <title>JSD9 Pickled Cat Website</title>
     <link
       rel="icon"
       type="image/png"
-      href="./assets/images/pickled-cat-logo.png"
+      href="../assets/images/favicon-black-cat-colored.png"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--App-->
-    <title>JSD9 Pickled Cat Website</title>
-
     <!--Google Fonts and Tailwind CSS-->
-    <link href="/src/style.css" rel="stylesheet" />
+    <link href="../src/style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -27,17 +25,17 @@
         <ul class="flex">
           <li class="pl-4">
             <a href="#">
-              <img src="./assets/images/m-icon-search.png" alt="search" />
+              <img src="../assets/images/m-icon-search.png" alt="search" />
             </a>
           </li>
           <li class="pl-4">
             <a href="#">
-              <img src="./assets/images/m-icon-cart.png" alt="cart" />
+              <img src="../assets/images/m-icon-cart.png" alt="cart" />
             </a>
           </li>
           <li class="pl-4">
             <a href="#">
-              <img src="./assets/images/m-icon-menu.png" alt="menu" />
+              <img src="../assets/images/m-icon-menu.png" alt="menu" />
             </a>
           </li>
         </ul>
@@ -63,20 +61,23 @@
         <ul class="col-span-4 col-start-9 flex items-center justify-end">
           <li class="mr-4">
             <a href="#">
-              <img src="./assets/images/shop-icon.png" alt="Cart" />
+              <img src="../assets/images/shop-icon.png" alt="Cart" />
             </a>
           </li>
           <li class="mr-4">
             <a href="#">
               <img
-                src="./assets/images/notification-icon.png"
+                src="../assets/images/notification-icon.png"
                 alt="Notification"
               />
             </a>
           </li>
           <li class="flex items-center justify-center">
             <a href="#">
-              <img src="./assets/images/profile-icon.png" alt="Profile Image" />
+              <img
+                src="../assets/images/profile-icon.png"
+                alt="Profile Image"
+              />
             </a>
             <span class="pl-2">
               <p>Hello!</p>
@@ -87,7 +88,205 @@
       </section>
     </header>
 
-    <!-- Your content here -->
+    <!-- MAIN: Checkout -->
+    <main class="font-inter md:px-4 xl:px-8">
+      <section class="pt-4 pb-8 max-xl:px-8 lg:pt-8">
+        <!-- nav menu -->
+        <nav class="text-secondary-700 mb-4 text-sm">
+          <a href="#">Home</a>
+          <span class="font-mono">&gt;</span>
+          <a href="#">Cart</a>
+        </nav>
+
+        <h2 class="text-primary-600 my-2 text-xl font-semibold">
+          Your Cart
+        </h2>
+
+        <div class="lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:gap-4">
+          <!-- Your Cart -->
+          <section class="mb-4">
+            <article
+              class="border-secondary-50 grid grid-cols-1 grid-rows-3 gap-2 rounded-xl border-1"
+            >
+              <!-- item list -->
+              <div class="grid grid-cols-2 grid-rows-1 gap-4 p-2">
+                <img
+                  class="max-w-full rounded-xl"
+                  src="../assets/images/product-list/7-pickled-yarn-ball.png"
+                  alt="Pickled Yarn Ball"
+                />
+                <div>
+                  <div class="flex items-start justify-between p-2">
+                    <div>
+                      <h3 class="text-sm">Pickled Yan Ball</h3>
+                      <span class="font-bold">฿150</span>
+                    </div>
+                    <img
+                      class="rounded"
+                      src="../assets/images/m-icon-bin.png"
+                      alt="bin"
+                    />
+                  </div>
+                  <!-- Button: Amount -->
+                  <div
+                    class="text-primary-900 bg-secondary-50 mt-4 flex w-[100px] items-center justify-between rounded-full"
+                  >
+                    <a href="#">
+                      <span class="pl-4">-</span>
+                    </a>
+                    <a href="#">
+                      <span>1</span>
+                    </a>
+                    <a href="#">
+                      <span class="pr-4">+</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 grid-rows-1 gap-4 p-2">
+                <img
+                  class="max-w-full rounded-xl"
+                  src="../assets/images/product-list/27-pickled-cat-mug.jpg"
+                  alt="Pickled Cat Mug"
+                />
+                <div>
+                  <div class="flex items-start justify-between p-2">
+                    <div>
+                      <h3 class="text-sm">Pickled Cat Mug</h3>
+                      <span class="font-bold">฿450</span>
+                    </div>
+                    <img
+                      class="rounded"
+                      src="../assets/images/m-icon-bin.png"
+                      alt="bin"
+                    />
+                  </div>
+                  <!-- Amount Button-->
+                  <div
+                    class="text-primary-900 bg-secondary-50 mt-4 flex w-[100px] items-center justify-between rounded-full"
+                  >
+                    <a href="#">
+                      <span class="pl-4">-</span>
+                    </a>
+                    <a href="#">
+                      <span>1</span>
+                    </a>
+                    <a href="#">
+                      <span class="pr-4">+</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 grid-rows-1 gap-4 p-2">
+                <img
+                  class="max-w-full rounded-2xl"
+                  src="../assets/images/product-list/16-pickled-cat-t-shirt.png"
+                  alt="Pickled Cat T-shirt"
+                />
+                <div>
+                  <div class="flex items-start justify-between p-2">
+                    <div>
+                      <h3 class="text-sm">Pickled Cat T-shirt</h3>
+                      <span class="font-bold">฿450</span>
+                    </div>
+                    <img
+                      class="rounded"
+                      src="../assets/images/m-icon-bin.png"
+                      alt="bin"
+                    />
+                  </div>
+                  <!-- Amount Button-->
+                  <div
+                    class="text-primary-900 bg-secondary-50 mt-4 flex w-[100px] items-center justify-between rounded-full"
+                  >
+                    <a href="#">
+                      <span class="pl-4">-</span>
+                    </a>
+                    <a href="#">
+                      <span>1</span>
+                    </a>
+                    <a href="#">
+                      <span class="pr-4">+</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <!-- Order Summary -->
+          <div>
+            <div class="border-secondary-50 mb-4 rounded-xl border-1 p-4">
+              <h2 class="text-primary-700 text-lg font-semibold">
+                Order Summary
+              </h2>
+              <p class="flex justify-between">
+                <span>Subtotal</span>
+                <span>฿1050</span>
+              </p>
+              <p class="flex justify-between">
+                <span>Discount (20%)</span>
+                <span>- ฿210</span>
+              </p>
+              <p class="flex justify-between">
+                <span>Delivery Fee</span>
+                <span>฿15</span>
+              </p>
+              <p class="flex justify-between font-bold">
+                <span>Total</span>
+                <span>฿855</span>
+              </p>
+              <!-- Promo code -->
+              <div class="flex justify-between">
+                <div
+                  class="bg-secondary-50 text-primary-500 mt-4 rounded-full px-8 py-2 text-sm"
+                >
+                  Add promo code
+                </div>
+                <div
+                  class="bg-primary-700 mt-4 rounded-full px-4 py-2 text-sm text-white"
+                >
+                  Apply
+                </div>
+              </div>
+              <!-- Button: Payment -->
+              <button
+                class="bg-primary-700 my-4 min-w-full rounded-full px-4 py-2 text-white"
+              >
+                Go to payment →
+              </button>
+            </div>
+            <!-- Membership -->
+            <p class="text-center text-sm">
+              Already a membership?
+              <span class="font-semibold">sign-in</span> or
+              <span class="font-semibold">sign-up</span>
+            </p>
+          </div>
+
+          <!-- News Subscription -->
+          <div class="lg:col-span-2">
+            <div class="bg-primary-100 border-secondary-50 my-4 rounded-xl border-1 p-4 lg:p-8"
+            >
+              <p class="text-primary-700 mb-4 text-2xl font-bold">
+                STAY UPTO DATE ABOUT OUR LATEST OFFERS
+              </p>
+              <input
+                class="min-w-full rounded-full bg-white p-2 text-center"
+                type="text"
+                placeholder="Enter your email address"
+              />
+
+              <!-- Button: Payment -->
+              <button
+                class="bg-primary-700 my-4 min-w-full rounded-full px-4 py-2 text-white"
+              >
+                Go to payment →
+              </button>
+            </div>
+          </div>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer
@@ -106,22 +305,22 @@
         <ul class="mt-5 flex items-center justify-start">
           <li class="p-1">
             <a href="#">
-              <img src="./assets/images/x-logo.png" alt="X" />
+              <img src="../assets/images/x-logo.png" alt="X" />
             </a>
           </li>
           <li class="p-1">
             <a href="#">
-              <img src="./assets/images/ig-logo.png" alt="Instagram" />
+              <img src="../assets/images/ig-logo.png" alt="Instagram" />
             </a>
           </li>
           <li class="p-1">
             <a href="#">
-              <img src="./assets/images/youtube-logo.png" alt="Youtube" />
+              <img src="../assets/images/youtube-logo.png" alt="Youtube" />
             </a>
           </li>
           <li class="p-1">
             <a href="#">
-              <img src="./assets/images/linkedin-logo.png" alt="Linkedin" />
+              <img src="../assets/images/linkedin-logo.png" alt="Linkedin" />
             </a>
           </li>
         </ul>
