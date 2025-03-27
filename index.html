@@ -170,78 +170,20 @@
       </section>
 
       <!-- Product Lists -->
-      <section class="flex justify-center px-[80px] py-[30px]">
-        <section class="pt-8">
-          <h2 class="text-[32px] font-bold text-[#3A4980] italic">
-            PICKLED-CAT's Products
-          </h2>
+      <section class="flex justify-center px-4 sm:px-8 md:px-16 lg:px-20 py-6">
+        <section class="w-full max-w-screen-lg">
+          <h2 class="text-[28px] sm:text-[32px] italic font-bold text-[#3A4980] text-center">PICKLED-CAT's Products</h2>
 
           <!-- menu-bar -->
-          <div
-            class="my-12 hidden items-center justify-between text-sm md:flex"
-          >
+          <div class="hidden md:flex justify-between items-center text-sm my-8">
             <!-- sort-option -->
-            <div class="flex gap-2">
-              <button
-                class="rounded-full bg-gray-200 px-4 py-1 text-sm font-medium hover:bg-gray-300"
-              >
-                Category
-                <img
-                  class="inline-block h-4 w-4"
-                  src="assets/images/drop.png"
-                  alt=""
-                />
-              </button>
-              <button
-                class="rounded-full bg-gray-200 px-4 py-1 text-sm font-medium hover:bg-gray-300"
-              >
-                Price
-                <img
-                  class="inline-block h-4 w-4"
-                  src="assets/images/drop.png"
-                  alt=""
-                />
-              </button>
-              <button
-                class="rounded-full bg-gray-200 px-4 py-1 text-sm font-medium hover:bg-gray-300"
-              >
-                Review
-                <img
-                  class="inline-block h-4 w-4"
-                  src="assets/images/drop.png"
-                  alt=""
-                />
-              </button>
-              <button
-                class="rounded-full bg-gray-200 px-4 py-1 text-sm font-medium hover:bg-gray-300"
-              >
-                Most Popular
-                <img
-                  class="inline-block h-4 w-4"
-                  src="assets/images/drop.png"
-                  alt=""
-                />
-              </button>
-              <button
-                class="rounded-full bg-gray-200 px-4 py-1 text-sm font-medium hover:bg-gray-300"
-              >
-                Newest Arrivals
-                <img
-                  class="inline-block h-4 w-4"
-                  src="assets/images/drop.png"
-                  alt=""
-                />
-              </button>
-              <button
-                class="rounded-full bg-gray-200 px-4 py-1 text-sm font-medium hover:bg-gray-300"
-              >
-                Biggest Discounts
-                <img
-                  class="inline-block h-4 w-4"
-                  src="assets/images/drop.png"
-                  alt=""
-                />
-              </button>
+            <div class="flex gap-2 flex-wrap">
+              <button class="px-4 py-1 text-sm font-medium bg-gray-200 rounded-full hover:bg-gray-300">Category <img src="assets/images/drop.png" alt="" class="w-4 h-4 inline-block"></button>
+              <button class="px-4 py-1 text-sm font-medium bg-gray-200 rounded-full hover:bg-gray-300">Price <img src="assets/images/drop.png" alt="" class="w-4 h-4 inline-block"</button>
+              <button class="px-4 py-1 text-sm font-medium bg-gray-200 rounded-full hover:bg-gray-300">Review <img src="assets/images/drop.png" alt="" class="w-4 h-4 inline-block"</button>
+              <button class="px-4 py-1 text-sm font-medium bg-gray-200 rounded-full hover:bg-gray-300">Most Popular <img src="assets/images/drop.png" alt="" class="w-4 h-4 inline-block"</button>
+              <button class="px-4 py-1 text-sm font-medium bg-gray-200 rounded-full hover:bg-gray-300">Newest Arrivals <img src="assets/images/drop.png" alt="" class="w-4 h-4 inline-block"</button>
+              <button class="px-4 py-1 text-sm font-medium bg-gray-200 rounded-full hover:bg-gray-300">Biggest Discounts <img src="assets/images/drop.png" alt="" class="w-4 h-4 inline-block"</button>
             </div>
 
             <!-- filter-option -->
@@ -261,30 +203,32 @@
           </div>
 
           <!-- product-tile-list -->
-          <div
-            class="md:grid-col grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"
-          >
-            <!-- product-01-01 -->
-            <div class="w-full rounded-2xl border p-4 shadow-md">
-              <!-- group-image -->
-              <div class="hover: flex justify-center">
-                <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
-                  src="assets/images/product-list/1-pickled-tuna feast.webp"
-                  alt="Pickled Tuna Feast"
-                />
-              </div>
-
-              <!-- group-detail -->
-              <div class="mt-2">
-                <div class="flex justify-between">
-                  <p>Pickled Tuna Feast</p>
-                  <p>250.00</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-col-3 lg:grid-cols-4 gap-5">
+              <!-- product-01-01 -->
+              <div class="border p-4 rounded-2xl shadow-md w-full">
+                <!-- group-image -->
+                <div class="flex justify-center">
+                    <img src="assets/images/product-list/1-pickled-tuna feast.webp" alt="Pickled Tuna Feast" 
+                    class="w-[231.8px] h-[244.63px] object-cover rounded-md transition-transform duration-300 hover:scale-110">
                 </div>
-                <p>ทูน่าดองสูตรพิเศษสำหรับแมว 150g.</p>
-                <div class="mt-2 flex h-4 gap-1 align-middle">
-                  <img src="assets/images/avg-star-review.png" alt="" />
-                  <p class="text-sm">(121)</p>
+                
+                <!-- group-detail -->
+                <div class="mt-2">
+                  <div class="flex justify-between">
+                    <p>Pickled Tuna Feast</p>
+                    <p>250.00</p>
+                  </div>
+                  <p>ทูน่าดองสูตรพิเศษสำหรับแมว 150g.</p>
+                  <div class="flex h-4 align-middle mt-2 gap-1">
+                    <img src="assets/images/avg-star-review.png" alt="">
+                    <p class="text-sm">(121)</p>
+                  </div>
+                </div>
+                
+                <!-- group-button -->
+                <div class="flex justify-around mt-4 gap-[11px]">
+                  <button class="bg-[#3A4980] text-white px-[10px] sm:px[15px] lg:px-[23.5px] py-2 rounded-full">Add To Cart</button>
+                  <button class="border text-[#344054] px-[10px] sm:px[15px] lg:px-[19.5px] py-2 rounded-full">Add To Shortlist</button>
                 </div>
               </div>
 
