@@ -32,3 +32,11 @@
 html {
   @apply font-custom;
 }
+
+.btn-addToCart {
+  @apply w-full rounded-full bg-[#3A4980] hover:bg-[#2E3A66] cursor-pointer px-6 py-2 text-white text-sm md:text-base;
+}
+
+.btn-addToShortList {
+  @apply w-full rounded-full border px-6 py-2 text-[#344054] hover:bg-[#f1f1f1] cursor-pointer text-sm md:text-base;
+}
