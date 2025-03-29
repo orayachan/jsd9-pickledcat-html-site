@@ -5,7 +5,7 @@
     <link
       rel="icon"
       type="image/png"
-      href="./assets/images/pickled-cat-logo.png"
+      href="./assets/images/favicon-black-cat-colored.png"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -23,7 +23,7 @@
       <nav
         class="flex items-center justify-between gap-4 border-b-1 border-b-slate-200 pt-4 pr-8 pb-4 pl-8 lg:hidden"
       >
-        <h1 class="col-span-3 text-xl font-bold italic">PICKLED-CAT</h1>
+        <h1 class="col-span-3 text-xl font-bold italic text-primary-800">PICKLED-CAT</h1>
         <ul class="flex">
           <li class="pl-4">
             <a href="#">
@@ -31,12 +31,12 @@
             </a>
           </li>
           <li class="pl-4">
-            <a href="#">
+            <a href="./pages/checkout.html">
               <img src="./assets/images/m-icon-cart.png" alt="cart" />
             </a>
           </li>
           <li class="pl-4">
-            <a href="#">
+            <a href="./pages/sign-in.html">
               <img src="./assets/images/m-icon-menu.png" alt="menu" />
             </a>
           </li>
@@ -48,26 +48,26 @@
       >
         <!-- Logo -->
         <div class="col-span-2">
-          <h1 class="text-3xl font-bold italic">PICKLED-CAT</h1>
+          <h1 class="text-3xl text-primary-700 font-bold italic">PICKLED-CAT</h1>
         </div>
         <!-- Navigation Menu -->
-        <nav class="col-span-6">
+        <nav class="col-span-6 text-primary-700">
           <ul class="ml-2 flex items-center justify-start">
-            <li class="ml-4"><a href="#">Category</a></li>
-            <li class="ml-4"><a href="#">Our Product</a></li>
-            <li class="ml-4"><a href="#">Contact</a></li>
-            <li class="ml-4"><a href="#">FAQs</a></li>
+            <li class="ml-4 hover:font-semibold"><a href="#">Category</a></li>
+            <li class="ml-4 hover:font-semibold"><a href="#">Our Product</a></li>
+            <li class="ml-4 hover:font-semibold"><a href="#">Contact</a></li>
+            <li class="ml-4 hover:font-semibold"><a href="#">FAQs</a></li>
           </ul>
         </nav>
         <!-- Profile -->
         <ul class="col-span-4 col-start-9 flex items-center justify-end">
           <li class="mr-4">
-            <a href="#">
+            <a href="./pages/checkout.html">
               <img src="./assets/images/shop-icon.png" alt="Cart" />
             </a>
           </li>
           <li class="mr-4">
-            <a href="#">
+            <a href="./pages/sign-in.html">
               <img
                 src="./assets/images/notification-icon.png"
                 alt="Notification"
@@ -75,10 +75,10 @@
             </a>
           </li>
           <li class="flex items-center justify-center">
-            <a href="#">
+            <a href="./pages/dashboard.html">
               <img src="./assets/images/profile-icon.png" alt="Profile Image" />
             </a>
-            <span class="pl-2">
+            <span class="pl-2 text-primary-700">
               <p>Hello!</p>
               <p class="font-semibold">Scarlet Johnson</p>
             </span>
@@ -170,18 +170,18 @@
       </section>
 
       <!-- Product Lists -->
-      <section class="flex justify-center px-[80px] py-[30px]">
-        <section class="pt-8">
-          <h2 class="text-[32px] font-bold text-[#3A4980] italic">
+      <section class="mx-4 my-6 flex justify-center sm:mx-8 md:mx-16 lg:mx-20">
+        <section class="w-full max-w-screen-2xl">
+          <h2
+            class="text-center text-[28px] font-bold text-[#3A4980] italic sm:text-[32px]"
+          >
             PICKLED-CAT's Products
           </h2>
 
           <!-- menu-bar -->
-          <div
-            class="my-12 hidden items-center justify-between text-sm md:flex"
-          >
+          <div class="my-8 hidden items-center justify-between text-sm md:flex">
             <!-- sort-option -->
-            <div class="flex gap-2">
+            <div class="flex flex-wrap gap-2">
               <button
                 class="rounded-full bg-gray-200 px-4 py-1 text-sm font-medium hover:bg-gray-300"
               >
@@ -261,23 +261,21 @@
 
           <!-- product-tile-list -->
           <div
-            class="md:grid-col grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4"
+            class="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
           >
             <!-- product-01-01 -->
-            <div class="w-full rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
-              <a href="pages/product-detail.html" target="_blank">
-                <div class="hover: flex justify-center">
-                  <img
-                    class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
-                    src="assets/images/product-list/1-pickled-tuna feast.webp"
-                    alt="Pickled Tuna Feast"
-                  />
-                </div>
-              </a>
+              <div class="hover: flex justify-center">
+                <img
+                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/1-pickled-tuna feast.webp"
+                  alt="Pickled Tuna Feast"
+                />
+              </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Pickled Tuna Feast</p>
                   <p>250.00</p>
@@ -290,14 +288,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -305,18 +303,18 @@
             </div>
 
             <!-- product-01-02 -->
-            <div class="rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
               <div class="flex justify-center">
                 <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
                   src="assets/images/product-list/2-pickled-chicken-bites.png"
                   alt="Pickled Chicken Bites"
                 />
               </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Pickled Chicken Bites</p>
                   <p>180.00</p>
@@ -329,14 +327,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -344,18 +342,18 @@
             </div>
 
             <!-- product-01-03 -->
-            <div class="rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
               <div class="flex justify-center">
                 <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
                   src="assets/images/product-list/3-freeze-dried-salmon-cube.png"
                   alt="Freeze Dried Salmon Cube"
                 />
               </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Freeze-Dried Salmon</p>
                   <p>320.00</p>
@@ -368,14 +366,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -383,23 +381,23 @@
             </div>
 
             <!-- product-01-04 -->
-            <div class="rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
               <div class="flex justify-center">
                 <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
                   src="assets/images/product-list/4-sweet-potato-cat-treat.png"
                   alt="Sweet Potato Cat Treat"
                 />
               </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Sweet Potato Cat</p>
                   <p>150.00</p>
                 </div>
-                <p>ขนมอบกรอบ ช่วยย่อยอาหาร 80g.</p>
+                <p>ขนมอบกรอบ ช่วยย่อยอาหาร</p>
                 <div class="mt-2 flex h-4 gap-1 align-middle">
                   <img src="assets/images/avg-star-review.png" alt="" />
                   <p class="text-sm">(121)</p>
@@ -407,14 +405,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -422,18 +420,18 @@
             </div>
 
             <!-- product-02-01 -->
-            <div class="rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
               <div class="flex justify-center">
                 <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
                   src="assets/images/product-list/5-lobster-cat-jelly.png"
                   alt="Lobster Cat Jelly"
                 />
               </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Lobster Cat Jelly</p>
                   <p>220.00</p>
@@ -446,14 +444,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -461,18 +459,18 @@
             </div>
 
             <!-- product-02-02 -->
-            <div class="rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
               <div class="flex justify-center">
                 <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
                   src="assets/images/product-list/6-interactive-fishing-rod.jpg"
                   alt="Interactive Fishing Rod"
                 />
               </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Fishing Rod</p>
                   <p>199.00</p>
@@ -485,14 +483,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -500,23 +498,23 @@
             </div>
 
             <!-- product-02-03 -->
-            <div class="rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
               <div class="flex justify-center">
                 <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
                   src="assets/images/product-list/7-pickled-yarn-ball.png"
                   alt="Pickled Yarn Ball"
                 />
               </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Pickled Yarn Ball</p>
                   <p>150.00</p>
                 </div>
-                <p>ลูกบอลไหมพรมกลิ่นปลาหมัก</p>
+                <p>ลูกบอลไหมพรมกลิ่นปลาหมัก ติดทนนาน</p>
                 <div class="mt-2 flex h-4 gap-1 align-middle">
                   <img src="assets/images/avg-star-review.png" alt="" />
                   <p class="text-sm">(121)</p>
@@ -524,14 +522,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -539,18 +537,18 @@
             </div>
 
             <!-- product-02-04 -->
-            <div class="rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
               <div class="flex justify-center">
                 <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
                   src="assets/images/product-list/9-pickled-mouse-chase.jpg"
                   alt="Pickled Mouse Chase"
                 />
               </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Pickled Mouse Chase</p>
                   <p>350.00</p>
@@ -563,14 +561,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -578,18 +576,18 @@
             </div>
 
             <!-- product-03-01 -->
-            <div class="rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
               <div class="flex justify-center">
                 <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
                   src="assets/images/product-list/13-pickled-barrel-bed.jpg"
                   alt="Pickled Barrel Bed"
                 />
               </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Pickled Barrel Bed</p>
                   <p>1490.00</p>
@@ -602,14 +600,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -617,23 +615,23 @@
             </div>
 
             <!-- product-03-02 -->
-            <div class="rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
               <div class="flex justify-center">
                 <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
                   src="assets/images/product-list/14-ancient-fortress-condo.jpg"
                   alt="Ancient Fortress Condo"
                 />
               </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Fortress Condo</p>
                   <p>2290.00</p>
                 </div>
-                <p>คอนโดแมวป้อมปราการโบราณ</p>
+                <p>คอนโดแมวป้อมปราการโบราณ 4 ชั้น</p>
                 <div class="mt-2 flex h-4 gap-1 align-middle">
                   <img src="assets/images/avg-star-review.png" alt="" />
                   <p class="text-sm">(121)</p>
@@ -641,14 +639,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -656,23 +654,23 @@
             </div>
 
             <!-- product-03-03 -->
-            <div class="rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
               <div class="flex justify-center">
                 <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
                   src="assets/images/product-list/16-pickled-cat-t-shirt.png"
                   alt="Pickled Cat T-shirt"
                 />
               </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Pickled Cat T-shirt</p>
                   <p>450.00</p>
                 </div>
-                <p>เสื้อยืดลายแมวดองเกลือ พิมพ์ลายติดทนนาน</p>
+                <p>เสื้อยืดลายแมวดองเกลือ ลายติดทนนาน</p>
                 <div class="mt-2 flex h-4 gap-1 align-middle">
                   <img src="assets/images/avg-star-review.png" alt="" />
                   <p class="text-sm">(121)</p>
@@ -680,14 +678,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -695,18 +693,18 @@
             </div>
 
             <!-- product-03-04 -->
-            <div class="rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
               <div class="flex justify-center">
                 <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
                   src="assets/images/product-list/18-vintage-cloak-for-cats.jpg"
                   alt="Vintage Cloak For Cats"
                 />
               </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Cloak for Cats</p>
                   <p>690.00</p>
@@ -719,14 +717,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -734,18 +732,18 @@
             </div>
 
             <!-- product-04-01 -->
-            <div class="rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
               <div class="flex justify-center">
                 <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
-                  src="assets/images/product-list/23-vintage-pickled-cat-clock.jpg"
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/25-pickled-cat-ceramic-jar.jpg"
                   alt="Vintage Pickled Cat Clock"
                 />
               </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Pickled Cat Jar</p>
                   <p>790.00</p>
@@ -758,14 +756,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -773,23 +771,23 @@
             </div>
 
             <!-- product-04-02 -->
-            <div class="rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
               <div class="flex justify-center">
                 <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
-                  src="assets/images/product-list/25-pickled-cat-ceramic-jar.jpg"
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/23-vintage-pickled-cat-clock.jpg"
                   alt="Pickled Cat Ceramic Jar"
                 />
               </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Pickled Cat Clock</p>
                   <p>1190.00</p>
                 </div>
-                <p>นาฬิกาแขวนลายแมวดองเกลือ</p>
+                <p>นาฬิกาแขวนลายแมวดองเกลือ สุดคลาสสิค</p>
                 <div class="mt-2 flex h-4 gap-1 align-middle">
                   <img src="assets/images/avg-star-review.png" alt="" />
                   <p class="text-sm">(121)</p>
@@ -797,14 +795,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -812,23 +810,23 @@
             </div>
 
             <!-- product-04-03 -->
-            <div class="rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
               <div class="flex justify-center">
                 <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
-                  src="assets/images/product-list/27-pickled-cat-mug.jpg"
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/30-pickled-cat-soap-bar.jpg"
                   alt="Pickled Cat Mug"
                 />
               </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Pickled Cat Soap Bar</p>
                   <p>250.00</p>
                 </div>
-                <p>สบู่ก้อนแมวดองธรรมชาติ มีส่วนผสมจากแมว</p>
+                <p>สบู่ก้อนแมวดองธรรมชาติ มีส่วนผสมแมว</p>
                 <div class="mt-2 flex h-4 gap-1 align-middle">
                   <img src="assets/images/avg-star-review.png" alt="" />
                   <p class="text-sm">(121)</p>
@@ -836,14 +834,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -851,18 +849,18 @@
             </div>
 
             <!-- product-04-04 -->
-            <div class="rounded-2xl border p-4 shadow-md">
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
               <!-- group-image -->
               <div class="flex justify-center">
                 <img
-                  class="h-[244.63px] w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
-                  src="assets/images/product-list/30-pickled-cat-soap-bar.jpg"
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/27-pickled-cat-mug.jpg"
                   alt="Pickled Cat Soap Bar"
                 />
               </div>
 
               <!-- group-detail -->
-              <div class="mt-2">
+              <div class="mt-2 flex-1">
                 <div class="flex justify-between">
                   <p>Pickled Cat Mug</p>
                   <p>450.00</p>
@@ -875,14 +873,14 @@
               </div>
 
               <!-- group-button -->
-              <div class="mt-4 flex justify-around gap-[11px]">
+              <div class="mt-4 flex flex-col gap-2">
                 <button
-                  class="rounded-full bg-[#3A4980] px-[23.5px] py-2 text-white"
+                  class="btn btn-addToCart"
                 >
                   Add To Cart
                 </button>
                 <button
-                  class="rounded-full border px-[19.5px] py-2 text-[#344054]"
+                  class="btn btn-addToShortList"
                 >
                   Add To Shortlist
                 </button>
@@ -923,17 +921,17 @@
               4
             </button>
             <button
-              class="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200"
+              class="hidden rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200"
             >
               5
             </button>
             <button
-              class="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200"
+              class="hidden rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200"
             >
               6
             </button>
             <button
-              class="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200"
+              class="hidden rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200"
             >
               7
             </button>
@@ -948,232 +946,129 @@
         </section>
       </section>
 
-      <!-- About Us -->
-      <section class="m-4 bg-white">
+
+      <!-- FAQs -->
+      <section class="mx-4 my-8">
+        <div class="relative mx-auto max-w-screen-xl justify-center">
         <!-- Title -->
         <div class="">
-          <h2 class="m-6 text-left text-4xl font-bold" style="color: #3a4980">
-            FAQs
-          </h2>
+          <h2 class="text-left m-6 font-bold text-4xl text-primary-700">FAQs</h2>
         </div>
 
         <!-- List -->
-        <div class="mr-4 mb-4 ml-4 flex flex-col gap-2">
-          <div class="bg-secondary-50 rounded-3xl border-2 border-black">
-            <input class="peer hidden" id="faq1" type="checkbox" />
-            <label
-              class="flex cursor-pointer items-center justify-between py-3 text-lg font-medium text-gray-700 peer-checked:[&>svg]:rotate-180"
-              for="faq1"
-            >
-              <span class="ml-4">How to contact us ?</span>
+        <div class="flex flex-col gap-2 ml-4 mr-4 mb-16">
+            <div class="bg-secondary-50 rounded-xl">
+                <input type="checkbox" id="faq1" class="hidden peer">
+                <label for="faq1" class="cursor-pointer py-3 text-lg font-medium text-gray-700 flex justify-between items-center peer-checked:[&>svg]:rotate-180">
+                    <span class="text-primary-800 ml-4">How to contact us?</span>
 
-              <svg
-                class="mr-4 h-5 w-5 text-black transition-transform duration-300 ease-in-out"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </label>
+                    <svg class="w-5 h-5 mr-4 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </label>
 
-            <div
-              class="m-2 hidden rounded-3xl border border-black bg-white p-4 text-gray-600 peer-checked:block"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              mollitia ducimus molestias accusantium labore quidem eius
-              recusandae velit ea exercitationem perspiciatis dolorum, beatae,
-              obcaecati, iusto ipsum adipisci non corporis nostrum.
+                <div class="hidden peer-checked:block p-4 bg-white text-gray-600 m-2 rounded-xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia ducimus molestias accusantium labore quidem eius recusandae velit ea exercitationem perspiciatis dolorum, beatae, obcaecati, iusto ipsum adipisci non corporis nostrum.
+                </div>
             </div>
-          </div>
 
-          <div class="bg-secondary-50 rounded-3xl border-2 border-black">
-            <input class="peer hidden" id="faq2" type="checkbox" />
-            <label
-              class="flex cursor-pointer items-center justify-between py-3 text-lg font-medium text-gray-700 peer-checked:[&>svg]:rotate-180"
-              for="faq2"
-            >
-              <span class="ml-4">Pickled Cat stands for ?</span>
+            <div class="bg-secondary-50 rounded-xl">
+                <input type="checkbox" id="faq2" class="hidden peer">
+                <label for="faq2" class="cursor-pointer py-3 text-lg font-medium text-gray-700 flex justify-between items-center peer-checked:[&>svg]:rotate-180">
+                    <span class="text-primary-800 ml-4">Pickled Cat stands for?</span>
+                    <svg class="w-5 h-5 mr-4 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </label>
 
-              <svg
-                class="mr-4 h-5 w-5 text-black transition-transform duration-300 ease-in-out"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </label>
-
-            <div
-              class="m-2 hidden rounded-3xl border border-black bg-white p-4 text-gray-600 peer-checked:block"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              mollitia ducimus molestias accusantium labore quidem eius
-              recusandae velit ea exercitationem perspiciatis dolorum, beatae,
-              obcaecati, iusto ipsum adipisci non corporis nostrum.
+                <div class="hidden peer-checked:block p-4 bg-white text-gray-600 m-2 rounded-xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia ducimus molestias accusantium labore quidem eius recusandae velit ea exercitationem perspiciatis dolorum, beatae, obcaecati, iusto ipsum adipisci non corporis nostrum.
+                </div>
             </div>
-          </div>
 
-          <div class="bg-secondary-50 rounded-3xl border-2 border-black">
-            <input class="peer hidden" id="faq3" type="checkbox" />
-            <label
-              class="flex cursor-pointer items-center justify-between py-3 text-lg font-medium text-gray-700 peer-checked:[&>svg]:rotate-180"
-              for="faq3"
-            >
-              <span class="ml-4">Promotion and Coupon ?</span>
+            <div class="bg-secondary-50 rounded-xl">
+                <input type="checkbox" id="faq3" class="hidden peer">
+                <label for="faq3" class="cursor-pointer py-3 text-lg font-medium text-gray-700 flex justify-between items-center peer-checked:[&>svg]:rotate-180">
+                    <span class="text-primary-800 ml-4">Promotion and Coupon?</span>
+                    <svg class="w-5 h-5 mr-4 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </label>
 
-              <svg
-                class="mr-4 h-5 w-5 text-black transition-transform duration-300 ease-in-out"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </label>
-
-            <div
-              class="m-2 hidden rounded-3xl border border-black bg-white p-4 text-gray-600 peer-checked:block"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              mollitia ducimus molestias accusantium labore quidem eius
-              recusandae velit ea exercitationem perspiciatis dolorum, beatae,
-              obcaecati, iusto ipsum adipisci non corporis nostrum.
+                <div class="hidden peer-checked:block p-4 bg-white text-gray-600 m-2 rounded-xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia ducimus molestias accusantium labore quidem eius recusandae velit ea exercitationem perspiciatis dolorum, beatae, obcaecati, iusto ipsum adipisci non corporis nostrum.
+                </div>
             </div>
-          </div>
 
-          <div class="bg-secondary-50 rounded-3xl border-2 border-black">
-            <input class="peer hidden" id="faq4" type="checkbox" />
-            <label
-              class="flex cursor-pointer items-center justify-between py-3 text-lg font-medium text-gray-700 peer-checked:[&>svg]:rotate-180"
-              for="faq4"
-            >
-              <span class="ml-4">Do you have a physical store ?</span>
+            <div class="bg-secondary-50 rounded-xl">
+                <input type="checkbox" id="faq4" class="hidden peer">
+                <label for="faq4" class="cursor-pointer py-3 text-lg font-medium text-gray-700 flex justify-between items-center peer-checked:[&>svg]:rotate-180">
+                    <span class="text-primary-800 ml-4">Do you have a physical store?</span>
+                    <svg class="w-5 h-5 mr-4 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </label>
 
-              <svg
-                class="mr-4 h-5 w-5 text-black transition-transform duration-300 ease-in-out"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </label>
-
-            <div
-              class="m-2 hidden rounded-3xl border border-black bg-white p-4 text-gray-600 peer-checked:block"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              mollitia ducimus molestias accusantium labore quidem eius
-              recusandae velit ea exercitationem perspiciatis dolorum, beatae,
-              obcaecati, iusto ipsum adipisci non corporis nostrum.
+                <div class="hidden peer-checked:block p-4 bg-white text-gray-600 m-2 rounded-xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia ducimus molestias accusantium labore quidem eius recusandae velit ea exercitationem perspiciatis dolorum, beatae, obcaecati, iusto ipsum adipisci non corporis nostrum.
+                </div>
+              </div>
             </div>
-          </div>
         </div>
       </section>
 
       <!-- Contact Us -->
-      <section class="m-4 bg-white">
+      <section class="bg-white mx-4 mb-16">
+        <div class="relative mx-auto max-w-screen-xl justify-center">
         <!-- Title -->
-        <div class="m-6 flex flex-col items-start">
-          <h2 class="text-4xl font-bold" style="color: #3a4980">Contact Us</h2>
+        <div class="flex flex-col items-start m-6">
+          <h2 class="font-bold text-4xl text-primary-700">Contact Us</h2>
         </div>
 
-        <div class="m-4 flex flex-col justify-center gap-2 lg:flex-row">
-          <div class="flex-[1] rounded-3xl border-2 border-black">
-            <div class="m-4 flex flex-col justify-center gap-2">
-              <div class="flex flex-row gap-4">
-                <img
-                  class="h-[40] w-[40px]"
-                  src="assets/images/location_icon.png"
-                />
-                <h2 class="self-center text-2xl font-bold">Address</h2>
-              </div>
-              <h3 class="text-gray-700">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
-                eveniet accusamus laudantium tempora, unde quia velit provident
-                sint nesciunt nisi voluptas saepe debitis, odio quo sit dolores
-                quam possimus perspiciatis.
-              </h3>
+        <div class="flex flex-col lg:flex-row justify-center gap-2 m-4">
+            <div class="flex-[1] border-2 border-primary-500 rounded-3xl">
+                <div class="m-4 flex flex-col justify-center gap-2">
+                    <div class="flex flex-row gap-4">
+                        <img src="assets/images/location_icon.png" class="w-[40px] h-[40]">
+                        <h2 class="text-primary-700 font-bold text-2xl self-center">Address</h2>
+                    </div>
+                    <h3 class="text-primary-800">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem eveniet accusamus laudantium tempora, unde quia velit provident sint nesciunt nisi voluptas saepe debitis, odio quo sit dolores quam possimus perspiciatis.</h3>
+                </div>
             </div>
-          </div>
 
-          <div class="flex-[1] rounded-3xl border-2 border-black">
-            <div class="m-4 flex flex-col justify-center gap-2">
-              <div class="flex flex-row gap-4">
-                <img
-                  class="h-[40] w-[40px]"
-                  src="assets/images/email_icon.png"
-                />
-                <h2 class="self-center text-2xl font-bold">Email</h2>
-              </div>
-              <h3 class="text-gray-700">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
-                eveniet accusamus laudantium tempora, unde quia velit provident
-                sint nesciunt nisi voluptas saepe debitis, odio quo sit dolores
-                quam possimus perspiciatis.
-              </h3>
+            <div class="flex-[1] border-2 border-primary-500 rounded-3xl">
+                <div class="m-4 flex flex-col justify-center gap-2">
+                    <div class="flex flex-row gap-4">
+                        <img src="assets/images/email_icon.png" class="w-[40px] h-[40]">
+                        <h2 class="text-primary-700 font-bold text-2xl self-center">Email</h2>
+                    </div>
+                    <h3 class="text-primary-800">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem eveniet accusamus laudantium tempora, unde quia velit provident sint nesciunt nisi voluptas saepe debitis, odio quo sit dolores quam possimus perspiciatis.</h3>
+                </div>
             </div>
-          </div>
 
-          <div class="flex-[1] rounded-3xl border-2 border-black">
-            <div class="m-4 flex flex-col justify-center gap-2">
-              <div class="flex flex-row gap-4">
-                <img
-                  class="h-[40] w-[40px]"
-                  src="assets/images/phone_icon.png"
-                />
-                <h2 class="self-center text-2xl font-bold">Phone</h2>
-              </div>
-              <h3 class="text-gray-700">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem
-                eveniet accusamus laudantium tempora, unde quia velit provident
-                sint nesciunt nisi voluptas saepe debitis, odio quo sit dolores
-                quam possimus perspiciatis.
-              </h3>
+            <div class="flex-[1] border-2 border-primary-500 rounded-3xl">
+                <div class="m-4 flex flex-col justify-center gap-2">
+                    <div class="flex flex-row gap-4">
+                        <img src="assets/images/phone_icon.png" class="w-[40px] h-[40]">
+                        <h2 class="text-primary-700 font-bold text-2xl self-center">Phone</h2>
+                    </div>
+                    <h3 class="text-primary-800">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem eveniet accusamus laudantium tempora, unde quia velit provident sint nesciunt nisi voluptas saepe debitis, odio quo sit dolores quam possimus perspiciatis.</h3>
+                </div>
             </div>
-          </div>
         </div>
 
         <!-- Map -->
-        <div
-          class="bg-secondary-50 border-2xl m-4 flex justify-center rounded-3xl border border-black p-4"
-        >
-          <iframe
-            class="h-[450px] max-h-[1280px] w-full max-w-[1280px] border-0"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.5470967393924!2d100.52318681537399!3d13.73671709035106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed5b4b0a6f1%3A0x49b6c87cf3734b5f!2z4LiL4Lit4Liy4LiE4Lij4LiZ4LiXIOC4geC4suC4h-C4nuC4seC4h-C4oiDguK3guJnguLLguIfguJ7guKPguLUg4LiB4Liy4LiH4Lij4Li44LiUIOaYjuiBlOWFqOiBnuGYn-W8gOW6lw!5e0!3m2!1sth!2sth!4v1648623661993!5m2!1sth!2sth"
-          >
-          </iframe>
+        <div class="bg-secondary-50 flex justify-center mx-4 my-8 p-4 rounded-3xl">
+            <iframe
+                class="w-full max-w-[1280px] h-[450px] max-h-[1280px] border-0"
+                loading="lazy"
+                allowfullscreen 
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.5470967393924!2d100.52318681537399!3d13.73671709035106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed5b4b0a6f1%3A0x49b6c87cf3734b5f!2z4LiL4Lit4Liy4LiE4Lij4LiZ4LiXIOC4geC4suC4h-C4nuC4seC4h-C4oiDguK3guJnguLLguIfguJ7guKPguLUg4LiB4Liy4LiH4Lij4Li44LiUIOaYjuiBlOWFqOiBnuGYn-W8gOW6lw!5e0!3m2!1sth!2sth!4v1648623661993!5m2!1sth!2sth">
+            </iframe>
         </div>
-      </section>
+      </div>
+    </section>
     </main>
 
     <!-- Footer -->
@@ -1181,10 +1076,10 @@
       class="grid grid-cols-1 gap-4 bg-violet-100 p-8 lg:grid-cols-4 lg:grid-rows-1"
     >
       <!-- Footer content -->
-      <div class="lg:col-span2 row-span-1">
+      <div class="lg:col-span2 row-span-1 text-primary-800">
         <h2 class="mb-5 text-xl font-bold italic">PICKLED-CAT</h2>
         <h3 class="pl-1 font-semibold">About Us</h3>
-        <p class="pl-1">
+        <p class="pl-1 text-primary-700">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cumque
           esse vitae, pariatur nam enim eligendi dolorem sit amet sunt
           reprehenderit ducimus est a ut Dolore necessitatibus obcaecati
@@ -1213,7 +1108,7 @@
           </li>
         </ul>
       </div>
-      <ul class="col-span-1 row-span-1 lg:col-start-3">
+      <ul class="col-span-1 row-span-1 lg:col-start-3 text-primary-800">
         <h3 class="font-semibold">Service</h3>
         <li><a href="#">Our products</a></li>
         <li><a href="#">Shipping</a></li>
@@ -1221,7 +1116,7 @@
         <li><a href="#">Term of service</a></li>
         <li><a href="#">Privacy policy</a></li>
       </ul>
-      <ul class="col-span-1 row-span-1 lg:col-start-4">
+      <ul class="col-span-1 row-span-1 lg:col-start-4 text-primary-800">
         <h3 class="font-semibold">Company</h3>
         <li><a href="#">Our story</a></li>
         <li><a href="#">Community</a></li>
@@ -1230,7 +1125,7 @@
       </ul>
       <!-- Copyright -->
       <ul
-        class="mt-5 flex flex-row items-start text-sm lg:col-span-4 lg:col-start-1"
+        class="mt-5 flex flex-row items-start  text-secondary-700 text-sm lg:col-span-4 lg:col-start-1"
       >
         <li class="list-none pr-2">
           Copyright &copy; 2025 <span class="italic">PICKLED-CAT</span>
