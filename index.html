@@ -2,10 +2,1136 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon-black-cat-colored.png"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JSD9 Pickled Cat HTML/CSS Site</title>
+
+    <!--App-->
+    <title>JSD9 Pickled Cat Website</title>
+
+    <!--Google Fonts and Tailwind CSS-->
+    <link href="/src/style.css" rel="stylesheet" />
   </head>
+
   <body>
-    <h1>Coming Soon...</h1>
+    <!-- Header -->
+    <header>
+      <!-- HEADER Mobile -->
+      <nav
+        class="flex items-center justify-between gap-4 border-b-1 border-b-slate-200 pt-4 pr-8 pb-4 pl-8 lg:hidden"
+      >
+        <h1 class="col-span-3 text-xl font-bold italic text-primary-800">PICKLED-CAT</h1>
+        <ul class="flex">
+          <li class="pl-4">
+            <a href="#">
+              <img src="./assets/images/m-icon-search.png" alt="search" />
+            </a>
+          </li>
+          <li class="pl-4">
+            <a href="./pages/checkout.html">
+              <img src="./assets/images/m-icon-cart.png" alt="cart" />
+            </a>
+          </li>
+          <li class="pl-4">
+            <a href="./pages/sign-in.html">
+              <img src="./assets/images/m-icon-menu.png" alt="menu" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- HEADER Tablet & Desktop -->
+      <section
+        class="hidden items-center justify-between gap-4 border-b-1 border-b-slate-200 p-8 lg:flex"
+      >
+        <!-- Logo -->
+        <div class="col-span-2">
+          <h1 class="text-3xl text-primary-700 font-bold italic">PICKLED-CAT</h1>
+        </div>
+        <!-- Navigation Menu -->
+        <nav class="col-span-6 text-primary-700">
+          <ul class="ml-2 flex items-center justify-start">
+            <li class="ml-4 hover:font-semibold"><a href="#">Category</a></li>
+            <li class="ml-4 hover:font-semibold"><a href="#">Our Product</a></li>
+            <li class="ml-4 hover:font-semibold"><a href="#">Contact</a></li>
+            <li class="ml-4 hover:font-semibold"><a href="#">FAQs</a></li>
+          </ul>
+        </nav>
+        <!-- Profile -->
+        <ul class="col-span-4 col-start-9 flex items-center justify-end">
+          <li class="mr-4">
+            <a href="./pages/checkout.html">
+              <img src="./assets/images/shop-icon.png" alt="Cart" />
+            </a>
+          </li>
+          <li class="mr-4">
+            <a href="./pages/sign-in.html">
+              <img
+                src="./assets/images/notification-icon.png"
+                alt="Notification"
+              />
+            </a>
+          </li>
+          <li class="flex items-center justify-center">
+            <a href="./pages/dashboard.html">
+              <img src="./assets/images/profile-icon.png" alt="Profile Image" />
+            </a>
+            <span class="pl-2 text-primary-700">
+              <p>Hello!</p>
+              <p class="font-semibold">Scarlet Johnson</p>
+            </span>
+          </li>
+        </ul>
+      </section>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="pt-8 pb-16 max-xl:px-8 lg:pt-16">
+        <div
+          class="bg-secondary relative mx-auto grid max-w-screen-xl justify-center rounded-xl border-red-300 px-8 shadow-xl sm:py-16 md:grid-cols-2 lg:px-16"
+        >
+          <div
+            class="max-w-prose space-y-8 max-xl:pb-24 max-lg:z-[1] max-md:text-center max-sm:pt-16 sm:content-center"
+          >
+            <h1
+              class="text-primary text-4xl leading-tight font-medium xl:text-5xl xl:leading-snug"
+            >
+              Grab Up to 50% discount on Pickled Cat Jars!
+            </h1>
+            <p class="text-lg text-zinc-700 xl:text-2xl">
+              Aqui, você encontrará respostas para todas as suas dúvidas, desde
+              a escolha da melhor ração até dicas essenciais para garantir o
+              bem-estar do seu companheiro peludo.
+            </p>
+            <button
+              class="bg-primary w-full rounded-full border-none py-2 text-lg text-white sm:w-7/12 xl:px-24 xl:py-3 xl:text-2xl"
+            >
+              Buy now!
+            </button>
+          </div>
+          <img
+            class="xs:h-full absolute bottom-0 max-md:opacity-30 sm:right-0 md:-right-8 lg:right-16 lg:h-[calc(100%+4rem)]"
+            src="assets/images/big-grey-cat.svg"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- Product Categories -->
+      <section class="pt-8 pb-16 max-xl:px-8 lg:pt-16">
+        <h2
+          class="text-primary xl:leading-snug4 text-4xl leading-tight font-medium xl:text-5xl"
+        >
+          Product Categories
+        </h2>
+        <div
+          class="bg-primary m-4 grid grid-cols-3 justify-center gap-4 rounded-md p-4"
+        >
+          <button
+            class="bg-secondary hover:bg-secondary-300 rounded-md p-4 text-zinc-700"
+          >
+            <img alt="cat-food" />
+            <h3>Premium Cat Foods & Snack</h3>
+          </button>
+          <button
+            class="bg-secondary hover:bg-secondary-300 rounded-md p-4 text-zinc-700"
+          >
+            <img alt="cat-toy" />
+            <h3>Cat Toys</h3>
+          </button>
+          <button
+            class="bg-secondary hover:bg-secondary-300 rounded-md p-4 text-zinc-700"
+          >
+            <img alt="cat-bed" />
+            <h3>Cat Beds & Condos</h3>
+          </button>
+          <button
+            class="bg-secondary hover:bg-secondary-300 rounded-md p-4 text-zinc-700"
+          >
+            <img alt="cat-accessories" />
+            <h3>Cat-Themed Apparel & Accessories</h3>
+          </button>
+          <button
+            class="bg-secondary hover:bg-secondary-300 rounded-md p-4 text-zinc-700"
+          >
+            <img alt="collectibles" />
+            <h3>Collectibles & Home Decor</h3>
+          </button>
+          <button
+            class="bg-secondary hover:bg-secondary-300 rounded-md p-4 text-zinc-700"
+          >
+            <img alt="gift" />
+            <h3>Pickled Cat Gift & Special Items</h3>
+          </button>
+        </div>
+      </section>
+
+      <!-- Product Lists -->
+      <section class="mx-4 my-6 flex justify-center sm:mx-8 md:mx-16 lg:mx-20">
+        <section class="w-full max-w-screen-2xl">
+          <h2
+            class="text-center text-[28px] font-bold text-[#3A4980] italic sm:text-[32px]"
+          >
+            PICKLED-CAT's Products
+          </h2>
+
+          <!-- menu-bar -->
+          <div class="my-8 hidden items-center justify-between text-sm md:flex">
+            <!-- sort-option -->
+            <div class="flex flex-wrap gap-2">
+              <button
+                class="rounded-full bg-gray-200 px-4 py-1 text-sm font-medium hover:bg-gray-300"
+              >
+                Category
+                <img
+                  class="inline-block h-4 w-4"
+                  src="assets/images/drop.png"
+                  alt=""
+                />
+              </button>
+              <button
+                class="rounded-full bg-gray-200 px-4 py-1 text-sm font-medium hover:bg-gray-300"
+              >
+                Price
+                <img
+                  class="inline-block h-4 w-4"
+                  src="assets/images/drop.png"
+                  alt=""
+                />
+              </button>
+              <button
+                class="rounded-full bg-gray-200 px-4 py-1 text-sm font-medium hover:bg-gray-300"
+              >
+                Review
+                <img
+                  class="inline-block h-4 w-4"
+                  src="assets/images/drop.png"
+                  alt=""
+                />
+              </button>
+              <button
+                class="rounded-full bg-gray-200 px-4 py-1 text-sm font-medium hover:bg-gray-300"
+              >
+                Most Popular
+                <img
+                  class="inline-block h-4 w-4"
+                  src="assets/images/drop.png"
+                  alt=""
+                />
+              </button>
+              <button
+                class="rounded-full bg-gray-200 px-4 py-1 text-sm font-medium hover:bg-gray-300"
+              >
+                Newest Arrivals
+                <img
+                  class="inline-block h-4 w-4"
+                  src="assets/images/drop.png"
+                  alt=""
+                />
+              </button>
+              <button
+                class="rounded-full bg-gray-200 px-4 py-1 text-sm font-medium hover:bg-gray-300"
+              >
+                Biggest Discounts
+                <img
+                  class="inline-block h-4 w-4"
+                  src="assets/images/drop.png"
+                  alt=""
+                />
+              </button>
+            </div>
+
+            <!-- filter-option -->
+            <div>
+              <button
+                class="rounded-full bg-gray-200 px-4 py-1 text-sm font-medium hover:bg-gray-300"
+              >
+                Product Filters
+                <img
+                  class="inline-block h-4 w-4"
+                  src="assets/images/drop.png"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+
+          <!-- product-tile-list -->
+          <div
+            class="grid grid-cols-1 gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+          >
+            <!-- product-01-01 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/1-pickled-tuna feast.webp"
+                  alt="Pickled Tuna Feast"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Pickled Tuna Feast</p>
+                  <p>250.00</p>
+                </div>
+                <p>ทูน่าดองสูตรพิเศษสำหรับแมว 150g.</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+
+            <!-- product-01-02 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/2-pickled-chicken-bites.png"
+                  alt="Pickled Chicken Bites"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Pickled Chicken Bites</p>
+                  <p>180.00</p>
+                </div>
+                <p>ขนมขบเคี้ยวเนื้อไก่หมักสูตรพิเศษ 100g.</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+
+            <!-- product-01-03 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/3-freeze-dried-salmon-cube.png"
+                  alt="Freeze Dried Salmon Cube"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Freeze-Dried Salmon</p>
+                  <p>320.00</p>
+                </div>
+                <p>แซลมอนฟรีซดราย กรอบนอกนุ่มใน 120g.</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+
+            <!-- product-01-04 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/4-sweet-potato-cat-treat.png"
+                  alt="Sweet Potato Cat Treat"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Sweet Potato Cat</p>
+                  <p>150.00</p>
+                </div>
+                <p>ขนมอบกรอบ ช่วยย่อยอาหาร</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+
+            <!-- product-02-01 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/5-lobster-cat-jelly.png"
+                  alt="Lobster Cat Jelly"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Lobster Cat Jelly</p>
+                  <p>220.00</p>
+                </div>
+                <p>เยลลี่รสล็อบสเตอร์สุดหรู 4 ซอง</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+
+            <!-- product-02-02 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/6-interactive-fishing-rod.jpg"
+                  alt="Interactive Fishing Rod"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Fishing Rod</p>
+                  <p>199.00</p>
+                </div>
+                <p>คันเบ็ดตกปลาแมว 1 ชิ้น</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+
+            <!-- product-02-03 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/7-pickled-yarn-ball.png"
+                  alt="Pickled Yarn Ball"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Pickled Yarn Ball</p>
+                  <p>150.00</p>
+                </div>
+                <p>ลูกบอลไหมพรมกลิ่นปลาหมัก ติดทนนาน</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+
+            <!-- product-02-04 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/9-pickled-mouse-chase.jpg"
+                  alt="Pickled Mouse Chase"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Pickled Mouse Chase</p>
+                  <p>350.00</p>
+                </div>
+                <p>หนูปลอมกลิ่นหมัก ขยับได้เมื่อแมวตบ</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+
+            <!-- product-03-01 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/13-pickled-barrel-bed.jpg"
+                  alt="Pickled Barrel Bed"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Pickled Barrel Bed</p>
+                  <p>1490.00</p>
+                </div>
+                <p>ที่นอนทรงถังไม้ดองเกลือ ฟรีน้ำเกลือ</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+
+            <!-- product-03-02 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/14-ancient-fortress-condo.jpg"
+                  alt="Ancient Fortress Condo"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Fortress Condo</p>
+                  <p>2290.00</p>
+                </div>
+                <p>คอนโดแมวป้อมปราการโบราณ 4 ชั้น</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+
+            <!-- product-03-03 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/16-pickled-cat-t-shirt.png"
+                  alt="Pickled Cat T-shirt"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Pickled Cat T-shirt</p>
+                  <p>450.00</p>
+                </div>
+                <p>เสื้อยืดลายแมวดองเกลือ ลายติดทนนาน</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+
+            <!-- product-03-04 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/18-vintage-cloak-for-cats.jpg"
+                  alt="Vintage Cloak For Cats"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Cloak for Cats</p>
+                  <p>690.00</p>
+                </div>
+                <p>เสื้อคลุมแมวสไตล์เกลือโบราณ ยุคนินจา</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+
+            <!-- product-04-01 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/25-pickled-cat-ceramic-jar.jpg"
+                  alt="Vintage Pickled Cat Clock"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Pickled Cat Jar</p>
+                  <p>790.00</p>
+                </div>
+                <p>โหลใส่อาหารแมวดองเกลือ ลายคลาสสิค</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+
+            <!-- product-04-02 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/23-vintage-pickled-cat-clock.jpg"
+                  alt="Pickled Cat Ceramic Jar"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Pickled Cat Clock</p>
+                  <p>1190.00</p>
+                </div>
+                <p>นาฬิกาแขวนลายแมวดองเกลือ สุดคลาสสิค</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+
+            <!-- product-04-03 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/30-pickled-cat-soap-bar.jpg"
+                  alt="Pickled Cat Mug"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Pickled Cat Soap Bar</p>
+                  <p>250.00</p>
+                </div>
+                <p>สบู่ก้อนแมวดองธรรมชาติ มีส่วนผสมแมว</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+
+            <!-- product-04-04 -->
+            <div class="w-full rounded-2xl border p-4 shadow-md flex flex-col justify-between h-full">
+              <!-- group-image -->
+              <div class="flex justify-center">
+                <img
+                  class="h-[244.63px] w-full max-w-[231.8px] rounded-md object-cover transition-transform duration-300 hover:scale-110"
+                  src="assets/images/product-list/27-pickled-cat-mug.jpg"
+                  alt="Pickled Cat Soap Bar"
+                />
+              </div>
+
+              <!-- group-detail -->
+              <div class="mt-2 flex-1">
+                <div class="flex justify-between">
+                  <p>Pickled Cat Mug</p>
+                  <p>450.00</p>
+                </div>
+                <p>แก้วมัคลายแมวดองเกลือ พร้อมจานรอง</p>
+                <div class="mt-2 flex h-4 gap-1 align-middle">
+                  <img src="assets/images/avg-star-review.png" alt="" />
+                  <p class="text-sm">(121)</p>
+                </div>
+              </div>
+
+              <!-- group-button -->
+              <div class="mt-4 flex flex-col gap-2">
+                <button
+                  class="btn btn-addToCart"
+                >
+                  Add To Cart
+                </button>
+                <button
+                  class="btn btn-addToShortList"
+                >
+                  Add To Shortlist
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- pagination -->
+          <div
+            class="mt-12 mb-8 flex items-center justify-center gap-2 overflow-auto"
+          >
+            <!-- ปุ่ม Previous -->
+            <button
+              class="rounded-md bg-gray-200 px-3 py-1 text-gray-700 hover:bg-gray-300"
+            >
+              Previous
+            </button>
+
+            <!-- หมายเลขเพจ -->
+            <button
+              class="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200"
+            >
+              1
+            </button>
+            <button
+              class="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200"
+            >
+              2
+            </button>
+            <button
+              class="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200"
+            >
+              3
+            </button>
+            <button
+              class="rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200"
+            >
+              4
+            </button>
+            <button
+              class="hidden rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200"
+            >
+              5
+            </button>
+            <button
+              class="hidden rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200"
+            >
+              6
+            </button>
+            <button
+              class="hidden rounded-md bg-gray-100 px-3 py-1 text-gray-700 hover:bg-gray-200"
+            >
+              7
+            </button>
+
+            <!-- ปุ่ม Next -->
+            <button
+              class="rounded-md bg-gray-200 px-3 py-1 text-gray-700 hover:bg-gray-300"
+            >
+              Next
+            </button>
+          </div>
+        </section>
+      </section>
+
+
+      <!-- FAQs -->
+      <section class="mx-4 my-8">
+        <div class="relative mx-auto max-w-screen-xl justify-center">
+        <!-- Title -->
+        <div class="">
+          <h2 class="text-left m-6 font-bold text-4xl text-primary-700">FAQs</h2>
+        </div>
+
+        <!-- List -->
+        <div class="flex flex-col gap-2 ml-4 mr-4 mb-16">
+            <div class="bg-secondary-50 rounded-xl">
+                <input type="checkbox" id="faq1" class="hidden peer">
+                <label for="faq1" class="cursor-pointer py-3 text-lg font-medium text-gray-700 flex justify-between items-center peer-checked:[&>svg]:rotate-180">
+                    <span class="text-primary-800 ml-4">How to contact us?</span>
+
+                    <svg class="w-5 h-5 mr-4 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </label>
+
+                <div class="hidden peer-checked:block p-4 bg-white text-gray-600 m-2 rounded-xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia ducimus molestias accusantium labore quidem eius recusandae velit ea exercitationem perspiciatis dolorum, beatae, obcaecati, iusto ipsum adipisci non corporis nostrum.
+                </div>
+            </div>
+
+            <div class="bg-secondary-50 rounded-xl">
+                <input type="checkbox" id="faq2" class="hidden peer">
+                <label for="faq2" class="cursor-pointer py-3 text-lg font-medium text-gray-700 flex justify-between items-center peer-checked:[&>svg]:rotate-180">
+                    <span class="text-primary-800 ml-4">Pickled Cat stands for?</span>
+                    <svg class="w-5 h-5 mr-4 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </label>
+
+                <div class="hidden peer-checked:block p-4 bg-white text-gray-600 m-2 rounded-xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia ducimus molestias accusantium labore quidem eius recusandae velit ea exercitationem perspiciatis dolorum, beatae, obcaecati, iusto ipsum adipisci non corporis nostrum.
+                </div>
+            </div>
+
+            <div class="bg-secondary-50 rounded-xl">
+                <input type="checkbox" id="faq3" class="hidden peer">
+                <label for="faq3" class="cursor-pointer py-3 text-lg font-medium text-gray-700 flex justify-between items-center peer-checked:[&>svg]:rotate-180">
+                    <span class="text-primary-800 ml-4">Promotion and Coupon?</span>
+                    <svg class="w-5 h-5 mr-4 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </label>
+
+                <div class="hidden peer-checked:block p-4 bg-white text-gray-600 m-2 rounded-xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia ducimus molestias accusantium labore quidem eius recusandae velit ea exercitationem perspiciatis dolorum, beatae, obcaecati, iusto ipsum adipisci non corporis nostrum.
+                </div>
+            </div>
+
+            <div class="bg-secondary-50 rounded-xl">
+                <input type="checkbox" id="faq4" class="hidden peer">
+                <label for="faq4" class="cursor-pointer py-3 text-lg font-medium text-gray-700 flex justify-between items-center peer-checked:[&>svg]:rotate-180">
+                    <span class="text-primary-800 ml-4">Do you have a physical store?</span>
+                    <svg class="w-5 h-5 mr-4 text-black transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </label>
+
+                <div class="hidden peer-checked:block p-4 bg-white text-gray-600 m-2 rounded-xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia ducimus molestias accusantium labore quidem eius recusandae velit ea exercitationem perspiciatis dolorum, beatae, obcaecati, iusto ipsum adipisci non corporis nostrum.
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Contact Us -->
+      <section class="bg-white mx-4 mb-16">
+        <div class="relative mx-auto max-w-screen-xl justify-center">
+        <!-- Title -->
+        <div class="flex flex-col items-start m-6">
+          <h2 class="font-bold text-4xl text-primary-700">Contact Us</h2>
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-center gap-2 m-4">
+            <div class="flex-[1] border-2 border-primary-500 rounded-3xl">
+                <div class="m-4 flex flex-col justify-center gap-2">
+                    <div class="flex flex-row gap-4">
+                        <img src="assets/images/location_icon.png" class="w-[40px] h-[40]">
+                        <h2 class="text-primary-700 font-bold text-2xl self-center">Address</h2>
+                    </div>
+                    <h3 class="text-primary-800">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem eveniet accusamus laudantium tempora, unde quia velit provident sint nesciunt nisi voluptas saepe debitis, odio quo sit dolores quam possimus perspiciatis.</h3>
+                </div>
+            </div>
+
+            <div class="flex-[1] border-2 border-primary-500 rounded-3xl">
+                <div class="m-4 flex flex-col justify-center gap-2">
+                    <div class="flex flex-row gap-4">
+                        <img src="assets/images/email_icon.png" class="w-[40px] h-[40]">
+                        <h2 class="text-primary-700 font-bold text-2xl self-center">Email</h2>
+                    </div>
+                    <h3 class="text-primary-800">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem eveniet accusamus laudantium tempora, unde quia velit provident sint nesciunt nisi voluptas saepe debitis, odio quo sit dolores quam possimus perspiciatis.</h3>
+                </div>
+            </div>
+
+            <div class="flex-[1] border-2 border-primary-500 rounded-3xl">
+                <div class="m-4 flex flex-col justify-center gap-2">
+                    <div class="flex flex-row gap-4">
+                        <img src="assets/images/phone_icon.png" class="w-[40px] h-[40]">
+                        <h2 class="text-primary-700 font-bold text-2xl self-center">Phone</h2>
+                    </div>
+                    <h3 class="text-primary-800">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem eveniet accusamus laudantium tempora, unde quia velit provident sint nesciunt nisi voluptas saepe debitis, odio quo sit dolores quam possimus perspiciatis.</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div class="bg-secondary-50 flex justify-center mx-4 my-8 p-4 rounded-3xl">
+            <iframe
+                class="w-full max-w-[1280px] h-[450px] max-h-[1280px] border-0"
+                loading="lazy"
+                allowfullscreen 
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.5470967393924!2d100.52318681537399!3d13.73671709035106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed5b4b0a6f1%3A0x49b6c87cf3734b5f!2z4LiL4Lit4Liy4LiE4Lij4LiZ4LiXIOC4geC4suC4h-C4nuC4seC4h-C4oiDguK3guJnguLLguIfguJ7guKPguLUg4LiB4Liy4LiH4Lij4Li44LiUIOaYjuiBlOWFqOiBnuGYn-W8gOW6lw!5e0!3m2!1sth!2sth!4v1648623661993!5m2!1sth!2sth">
+            </iframe>
+        </div>
+      </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="grid grid-cols-1 gap-4 bg-violet-100 p-8 lg:grid-cols-4 lg:grid-rows-1"
+    >
+      <!-- Footer content -->
+      <div class="lg:col-span2 row-span-1 text-primary-800">
+        <h2 class="mb-5 text-xl font-bold italic">PICKLED-CAT</h2>
+        <h3 class="pl-1 font-semibold">About Us</h3>
+        <p class="pl-1 text-primary-700">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cumque
+          esse vitae, pariatur nam enim eligendi dolorem sit amet sunt
+          reprehenderit ducimus est a ut Dolore necessitatibus obcaecati
+          molestias commodi
+        </p>
+        <ul class="mt-5 flex items-center justify-start">
+          <li class="p-1">
+            <a href="#">
+              <img src="./assets/images/x-logo.png" alt="X" />
+            </a>
+          </li>
+          <li class="p-1">
+            <a href="#">
+              <img src="./assets/images/ig-logo.png" alt="Instagram" />
+            </a>
+          </li>
+          <li class="p-1">
+            <a href="#">
+              <img src="./assets/images/youtube-logo.png" alt="Youtube" />
+            </a>
+          </li>
+          <li class="p-1">
+            <a href="#">
+              <img src="./assets/images/linkedin-logo.png" alt="Linkedin" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="col-span-1 row-span-1 lg:col-start-3 text-primary-800">
+        <h3 class="font-semibold">Service</h3>
+        <li><a href="#">Our products</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Payment options</a></li>
+        <li><a href="#">Term of service</a></li>
+        <li><a href="#">Privacy policy</a></li>
+      </ul>
+      <ul class="col-span-1 row-span-1 lg:col-start-4 text-primary-800">
+        <h3 class="font-semibold">Company</h3>
+        <li><a href="#">Our story</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <!-- Copyright -->
+      <ul
+        class="mt-5 flex flex-row items-start  text-secondary-700 text-sm lg:col-span-4 lg:col-start-1"
+      >
+        <li class="list-none pr-2">
+          Copyright &copy; 2025 <span class="italic">PICKLED-CAT</span>
+        </li>
+        <li class="hidden list-none lg:inline-block">⚡︎ All right Reserved</li>
+      </ul>
+    </footer>
   </body>
 </html>
