@@ -69,14 +69,13 @@
         <!-- Page -->
         <div class="flex-[17] w-screen h-screen">
 
-          <input type="radio" id="account" name="page" class="hidden" checked />
-          <input type="radio" id="orders" name="page" class="hidden" />
+          <input type="radio" id="account" name="page" class="hidden" />
+          <input type="radio" id="orders" name="page" class="hidden" checked />
           <input type="radio" id="wishlist" name="page" class="hidden" />
           <input type="radio" id="coupons" name="page" class="hidden" />
 
           <!-- My Account Content -->
           <div id="account-content" class="hidden [#account:checked~&]:block">
-            <!-- <h2>My Account</h2> -->
             <div class="flex flex-col">
               <div class="border-b border-black pl-4 py-1.5">
                 <h2 class="text-xl font-semibold">Personal Information</h2>
@@ -159,10 +158,43 @@
           <!-- Order History Content -->
           <div id="orders-content" class="hidden peer-checked:block">
             <div class="flex flex-col">
+
+              <input type="radio" id="all-orders" class="hidden" checked/>
+
               <div class="border-b border-black pl-4 py-1.5">
                 <h2 class="text-xl font-semibold">Order History</h2>
                 <h2 class="text-neutral-500">Manage your orders</h2>
               </div>
+
+              <div class="flex flex-row justify-start">
+                <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
+                  <label for="all-orders" class="">
+                    <h2>All</h2>
+                  </label>
+                </div>
+
+                <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
+                  <h2>Pending Payment</h2>
+                </div>
+
+                <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
+                  <h2>Preparing Order</h2>
+                </div>
+
+                <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
+                  <h2>On Route</h2>
+                </div>
+
+                <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
+                  <h2>Success</h2>
+                </div>
+
+                <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
+                  <h2>Cancelled</h2>
+                </div>
+              </div>
+
+              
             </div>
           </div>
 
