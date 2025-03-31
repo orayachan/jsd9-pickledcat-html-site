@@ -20,6 +20,13 @@
       #orders:checked ~ #orders-content { display: block; }
       #wishlist:checked ~ #wishlist-content { display: block; }
       #coupons:checked ~ #coupons-content { display: block; }
+
+      #all-orders:checked ~ #all-orders-content {display: block;}
+      #pending-orders:checked ~ #pending-orders-content {display: block;}
+      #preparing-orders:checked ~ #preparing-orders-content {display: block;}
+      #on-route-orders:checked ~ #on-route-orders-content {display: block;}
+      #success-orders:checked ~ #success-orders-content {display: block;}
+      #cancelled-orders:checked ~ #cancelled-orders-content {display: block;}
     </style>
   </head>
 
@@ -69,9 +76,9 @@
         <!-- Page -->
         <div class="flex-[17] w-screen h-screen">
 
-          <input type="radio" id="account" name="page" class="hidden" />
-          <input type="radio" id="orders" name="page" class="hidden" checked />
-          <input type="radio" id="wishlist" name="page" class="hidden" />
+          <input type="radio" id="account" name="page" class="hidden" checked />
+          <input type="radio" id="orders" name="page" class="hidden" />
+          <input type="radio" id="wishlist" name="page" class="hidden"/>
           <input type="radio" id="coupons" name="page" class="hidden" />
 
           <!-- My Account Content -->
@@ -159,7 +166,12 @@
           <div id="orders-content" class="hidden peer-checked:block">
             <div class="flex flex-col">
 
-              <input type="radio" id="all-orders" class="hidden" checked/>
+              <input type="radio" id="all-orders" name="content" class="hidden" checked/>
+              <input type="radio" id="pending-orders" name="content" class="hidden"/>
+              <input type="radio" id="preparing-orders" name="content" class="hidden"/>
+              <input type="radio" id="on-route-orders" name="content" class="hidden"/>
+              <input type="radio" id="success-orders" name="content" class="hidden"/>
+              <input type="radio" id="cancelled-orders" name="content" class="hidden"/>
 
               <div class="border-b border-black pl-4 py-1.5">
                 <h2 class="text-xl font-semibold">Order History</h2>
@@ -168,34 +180,245 @@
 
               <div class="flex flex-row justify-start">
                 <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
-                  <label for="all-orders" class="">
+                  <label for="all-orders" class="cursor-pointer">
                     <h2>All</h2>
                   </label>
                 </div>
 
                 <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
-                  <h2>Pending Payment</h2>
+                  <label for="pending-orders" class="cursor-pointer">
+                    <h2>Pending Payment</h2>
+                  </label>
                 </div>
 
                 <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
-                  <h2>Preparing Order</h2>
+                  <label for="preparing-orders" class="cursor-pointer">
+                    <h2>Preparing Order</h2>
+                  </label>
                 </div>
 
                 <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
-                  <h2>On Route</h2>
+                  <label for="on-route-orders" class="cursor-pointer">
+                    <h2>On Route</h2>
+                  </label>
                 </div>
 
                 <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
-                  <h2>Success</h2>
+                  <label for="success-orders" class="cursor-pointer">
+                    <h2>Success</h2>
+                  </label>
                 </div>
 
                 <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
-                  <h2>Cancelled</h2>
+                  <label for="cancelled-orders" class="cursor-pointer">
+                    <h2>Cancelled</h2>
+                  </label>
                 </div>
               </div>
 
-              
-            </div>
+              <div id="all-orders-content" class="hidden [#all-orders:checked~&]:block">
+                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                  <div class="flex-[1]">
+                    <img src="/assets/images/product-list/5-lobster-cat-jelly.png " class="max-w-16 max-h-16">
+                  </div>
+
+                  <div class="flex-[4]">
+                    <h2>Lobster Jelly Healthy</h2>
+                    <div class="flex flex-row gap-2">
+                      <h2>39 B</h2>
+                      <h2 class="text-neutral-400">X</h2>
+                      <h2>7</h2>
+                    </div>
+                  </div>
+
+                  <div class="flex-[1] text-center mt-5">
+                    <h2 class="text-neutral-500">Pending Payment</h2>
+                  </div>
+                </div>
+
+                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                  <div class="flex-[1]">
+                    <img src="/assets/images/product-list//1-pickled-tuna feast.webp " class="max-w-16 max-h-16">
+                  </div>
+
+                  <div class="flex-[4]">
+                    <h2>Tuna Healthy</h2>
+                    <div class="flex flex-row gap-2">
+                      <h2>42 B</h2>
+                      <h2 class="text-neutral-400">X</h2>
+                      <h2>3</h2>
+                    </div>
+                  </div>
+
+                  <div class="flex-[1] text-center mt-5">
+                    <h2 class="text-yellow-500">Preparing</h2>
+                  </div>
+                </div>
+
+                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                  <div class="flex-[1]">
+                    <img src="/assets/images/product-list//3-freeze-dried-salmon-cube.png " class="max-w-16 max-h-16">
+                  </div>
+
+                  <div class="flex-[4]">
+                    <h2>Freeze dried salmon</h2>
+                    <div class="flex flex-row gap-2">
+                      <h2>55 B</h2>
+                      <h2 class="text-neutral-400">X</h2>
+                      <h2>3</h2>
+                    </div>
+                  </div>
+
+                  <div class="flex-[1] text-center mt-5">
+                    <h2 class="text-yellow-500">On Route</h2>
+                  </div>
+                </div>
+
+                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                  <div class="flex-[1]">
+                    <img src="/assets/images/product-list//23-vintage-pickled-cat-clock.jpg " class="max-w-16 max-h-16">
+                  </div>
+
+                  <div class="flex-[4]">
+                    <h2>Vintage cat clock</h2>
+                    <div class="flex flex-row gap-2">
+                      <h2>379 B</h2>
+                      <h2 class="text-neutral-400">X</h2>
+                      <h2>1</h2>
+                    </div>
+                  </div>
+
+                  <div class="flex-[1] text-center mt-5">
+                    <h2 class="text-green-600">Success</h2>
+                  </div>
+                </div>
+
+                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                  <div class="flex-[1]">
+                    <img src="/assets/images/product-list//4-sweet-potato-cat-treat.png " class="max-w-16 max-h-16">
+                  </div>
+
+                  <div class="flex-[4]">
+                    <h2>Sweet Potato</h2>
+                    <div class="flex flex-row gap-2">
+                      <h2>269 B</h2>
+                      <h2 class="text-neutral-400">X</h2>
+                      <h2>1</h2>
+                    </div>
+                  </div>
+
+                  <div class="flex-[1] text-center mt-5">
+                    <h2 class="text-red-600">Cancelled</h2>
+                  </div>
+                </div>
+              </div>
+
+              <div id="pending-orders-content" class="hidden [#pending-orders:checked~&]:block">
+                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                  <div class="flex-[1]">
+                    <img src="/assets/images/product-list/5-lobster-cat-jelly.png " class="max-w-16 max-h-16">
+                  </div>
+
+                  <div class="flex-[4]">
+                    <h2>Lobster Jelly Healthy</h2>
+                    <div class="flex flex-row gap-2">
+                      <h2>39 B</h2>
+                      <h2 class="text-neutral-400">X</h2>
+                      <h2>7</h2>
+                    </div>
+                  </div>
+
+                  <div class="flex-[1] text-center mt-5">
+                    <h2 class="text-neutral-500">Pending Payment</h2>
+                  </div>
+                </div>
+              </div>
+
+              <div id="preparing-orders-content" class="hidden [#preparing-orders:checked~&]:block">
+                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                  <div class="flex-[1]">
+                    <img src="/assets/images/product-list//1-pickled-tuna feast.webp " class="max-w-16 max-h-16">
+                  </div>
+
+                  <div class="flex-[4]">
+                    <h2>Tuna Healthy</h2>
+                    <div class="flex flex-row gap-2">
+                      <h2>42 B</h2>
+                      <h2 class="text-neutral-400">X</h2>
+                      <h2>3</h2>
+                    </div>
+                  </div>
+
+                  <div class="flex-[1] text-center mt-5">
+                    <h2 class="text-yellow-500">Preparing</h2>
+                  </div>
+                </div>
+              </div>
+
+              <div id="on-route-orders-content" class="hidden [#on-route-orders:checked~&]:block">
+                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                  <div class="flex-[1]">
+                    <img src="/assets/images/product-list//3-freeze-dried-salmon-cube.png " class="max-w-16 max-h-16">
+                  </div>
+
+                  <div class="flex-[4]">
+                    <h2>Freeze dried salmon</h2>
+                    <div class="flex flex-row gap-2">
+                      <h2>55 B</h2>
+                      <h2 class="text-neutral-400">X</h2>
+                      <h2>3</h2>
+                    </div>
+                  </div>
+
+                  <div class="flex-[1] text-center mt-5">
+                    <h2 class="text-yellow-500">On Route</h2>
+                  </div>
+                </div>
+              </div>
+
+              <div id="success-orders-content" class="hidden [#success-orders:checked~&]:block">
+                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                  <div class="flex-[1]">
+                    <img src="/assets/images/product-list//23-vintage-pickled-cat-clock.jpg " class="max-w-16 max-h-16">
+                  </div>
+
+                  <div class="flex-[4]">
+                    <h2>Vintage cat clock</h2>
+                    <div class="flex flex-row gap-2">
+                      <h2>379 B</h2>
+                      <h2 class="text-neutral-400">X</h2>
+                      <h2>1</h2>
+                    </div>
+                  </div>
+
+                  <div class="flex-[1] text-center mt-5">
+                    <h2 class="text-green-600">Success</h2>
+                  </div>
+                </div>
+              </div>
+
+              <div id="cancelled-orders-content" class="hidden [#cancelled-orders:checked~&]:block">
+                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                  <div class="flex-[1]">
+                    <img src="/assets/images/product-list//4-sweet-potato-cat-treat.png " class="max-w-16 max-h-16">
+                  </div>
+
+                  <div class="flex-[4]">
+                    <h2>Sweet Potato</h2>
+                    <div class="flex flex-row gap-2">
+                      <h2>269 B</h2>
+                      <h2 class="text-neutral-400">X</h2>
+                      <h2>1</h2>
+                    </div>
+                  </div>
+
+                  <div class="flex-[1] text-center mt-5">
+                    <h2 class="text-red-600">Cancelled</h2>
+                  </div>
+                </div>
+              </div>
+
+              </div>
           </div>
 
           <div id="wishlist-content" class="hidden peer-checked:block">
@@ -203,6 +426,42 @@
               <div class="border-b border-black pl-4 py-1.5">
                 <h2 class="text-xl font-semibold">My Wishlist</h2>
                 <h2 class="text-neutral-500">Check your wishlists</h2>
+              </div>
+
+              <div>
+                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                  <div class="flex-[1]">
+                    <img src="/assets/images/product-list//4-sweet-potato-cat-treat.png " class="max-w-16 max-h-16">
+                  </div>
+
+                  <div class="flex-[4] pt-2">
+                    <h2>Sweet Potato</h2>
+                    <div class="flex flex-row gap-2">
+                      <h2>269 B</h2>
+                    </div>
+                  </div>
+
+                  <div class="flex-[1] text-center mt-3">
+                    <button class="hover:bg-neutral-200 px-8 py-2 rounded border border-black">Go</button>
+                  </div>
+                </div>
+
+                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                  <div class="flex-[1]">
+                    <img src="/assets/images/product-list//9-pickled-mouse-chase.jpg " class="max-w-16 max-h-16">
+                  </div>
+
+                  <div class="flex-[4] pt-2">
+                    <h2>Mouse toy for cat</h2>
+                    <div class="flex flex-row gap-2">
+                      <h2>129 B</h2>
+                    </div>
+                  </div>
+
+                  <div class="flex-[1] text-center mt-3">
+                    <button class="hover:bg-neutral-200 px-8 py-2 rounded border border-black">Go</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -212,6 +471,40 @@
               <div class="border-b border-black pl-4 py-1.5">
                 <h2 class="text-xl font-semibold">My Coupons</h2>
                 <h2 class="text-neutral-500">Your coupons</h2>
+              </div>
+            </div>
+
+            <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+              <div class="flex-[1] ml-4">
+                <img src="/assets/images//coupon-icon.png " class="max-w-16 max-h-16">
+              </div>
+
+              <div class="flex-[4] pt-2">
+                <h2>25 % ( Max 40 B )</h2>
+                <div class="flex flex-row gap-2">
+                  <h2>Min Price 100 B</h2>
+                </div>
+              </div>
+
+              <div class="flex-[1] text-center mt-3">
+                <button class="hover:bg-neutral-200 px-8 py-2 rounded border border-black">USE</button>
+              </div>
+            </div>
+
+            <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+              <div class="flex-[1] ml-4">
+                <img src="/assets/images//coupon-icon.png " class="max-w-16 max-h-16">
+              </div>
+
+              <div class="flex-[4] pt-2">
+                <h2>80 B</h2>
+                <div class="flex flex-row gap-2">
+                  <h2>Min Price 250 B</h2>
+                </div>
+              </div>
+
+              <div class="flex-[1] text-center mt-3">
+                <button class="hover:bg-neutral-200 px-8 py-2 rounded border border-black">USE</button>
               </div>
             </div>
           </div>
