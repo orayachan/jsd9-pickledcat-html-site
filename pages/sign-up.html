@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/images/favicon-black-cat-colored.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--App-->
+    <title>Pickled Cat Shop | Sign up</title>
+
+    <!--Google Fonts and Tailwind CSS-->
+    <link href="/src/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header
+      class="fixed w-dvw content-center border-b-zinc-200 bg-white shadow"
+    >
+      <div
+        class="mx-auto grid h-20 max-w-screen-2xl grid-flow-col grid-cols-2 place-content-center max-2xl:px-4 lg:grid-cols-3"
+      >
+        <!--Start-->
+        <div class="content-center">
+          <a
+            class="text-primary-900 text-xl font-bold italic lg:text-3xl"
+            href=""
+          >
+            PICKLED-CAT
+          </a>
+        </div>
+
+        <!--Center -->
+        <nav class="flex items-center justify-end gap-4 lg:justify-center">
+          <ul class="flex items-center gap-4 text-center lg:gap-8">
+            <li>
+              <a href="#">
+                <p class="max-lg:hidden">Category</p>
+                <img
+                  class="lg:hidden"
+                  src="/assets/images/m-icon-search.png"
+                  alt="Browse category"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p class="max-lg:hidden">Our Products</p>
+                <img
+                  class="lg:hidden"
+                  src="/assets/images/m-icon-cart.png"
+                  alt="cart"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <p class="max-lg:hidden">Contacts</p>
+                <img
+                  class="lg:hidden"
+                  src="/assets/images/m-icon-menu.png"
+                  alt="menu"
+                />
+              </a>
+            </li>
+            <li class="max-lg:hidden">
+              <a href="#">
+                <p>FAQs</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--End-->
+        <div class="hidden items-center justify-end gap-4 lg:flex">
+          <!--Checkout-->
+          <a
+            class="grid size-14 place-items-center rounded-full bg-red-50/70 p-4"
+            href="/pages/checkout.html"
+          >
+            <svg
+              class="size-full stroke-red-800"
+              stroke="currentColor"
+              fill="none"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              height="200px"
+              width="200px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            class="grid aspect-square size-14 place-items-center rounded-full bg-blue-50/70 p-4"
+            href="/pages/checkout.html"
+          >
+            <svg
+              class="size-full stroke-blue-800"
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              height="200px"
+              width="200px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="32"
+                d="M427.68 351.43C402 320 383.87 304 383.87 217.35 383.87 138 343.35 109.73 310 96c-4.43-1.82-8.6-6-9.95-10.55C294.2 65.54 277.8 48 256 48s-38.21 17.55-44 37.47c-1.35 4.6-5.52 8.71-9.95 10.53-33.39 13.75-73.87 41.92-73.87 121.35C128.13 304 110 320 84.32 351.43 73.68 364.45 83 384 101.61 384h308.88c18.51 0 27.77-19.61 17.19-32.57zM320 384v16a64 64 0 0 1-128 0v-16"
+              ></path>
+            </svg>
+          </a>
+
+          <!--Profile-->
+          <div class="flex items-center gap-4">
+            <a href="#">
+              <img
+                class="size-14"
+                src="/assets/images/profile-icon.png"
+                alt="Profile"
+              />
+            </a>
+            <div>
+              <p>Hello!</p>
+              <p class="font-semibold">Scarlet Johnson</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section
+        class="hidden items-center justify-between gap-4 border-b-1 border-b-slate-200 p-8"
+      >
+        <!-- Profile -->
+        <ul class="col-span-4 col-start-9 flex items-center justify-end">
+          <li class="mr-4">
+            <a href="#">
+              <img src="/assets/images/shop-icon.png" alt="Cart" />
+            </a>
+          </li>
+          <li class="mr-4">
+            <a href="#">
+              <img
+                src="/assets/images/notification-icon.png"
+                alt="Notification"
+              />
+            </a>
+          </li>
+          <li class="flex items-center justify-center"></li>
+        </ul>
+      </section>
+    </header>
+
+    <!--Body-->
+    <main class="content-center">
+      <section
+        class="lg:bg-secondary-50 min-h-dvh content-center pt-16 lg:pt-24 lg:pb-4"
+      >
+        <div
+          class="mx-auto grid max-w-screen-lg place-items-center rounded-xl p-4 lg:bg-white lg:p-8 lg:shadow-md"
+        >
+          <!--Start-->
+          <form
+            class="mx-auto size-full content-center space-y-12"
+            action=""
+            method="post"
+          >
+            <!--Form fields-->
+            <div class="content-center space-y-8">
+              <h1 class="text-center text-4xl font-semibold">สมัครสมาชิก</h1>
+              <div class="space-y-4">
+                <div class="grid gap-2">
+                  <label class="font-semibold" for="email">อีเมล์</label>
+                  <input
+                    class="rounded-xl bg-zinc-200 px-4 py-3 shadow-inner"
+                    type="email"
+                    name="email"
+                    placeholder="example@email.com"
+                  />
+                </div>
+                <div class="grid gap-2">
+                  <label class="font-semibold" for="fullname">ชื่อจริง</label>
+                  <input
+                    class="rounded-xl bg-zinc-200 px-4 py-3 shadow-inner"
+                    type="text"
+                    name="fullname"
+                    placeholder="ชื่อเต็มของคุณ"
+                  />
+                </div>
+                <div class="grid gap-2">
+                  <label class="font-semibold" for="lastname">นามสกุล</label>
+                  <input
+                    class="rounded-xl bg-zinc-200 px-4 py-3 shadow-inner"
+                    type="text"
+                    name="lastname"
+                    placeholder="นามสกุลของคุณ"
+                  />
+                </div>
+                <div class="grid gap-2">
+                  <label class="font-semibold" for="password">รหัสผ่าน</label>
+                  <input
+                    class="rounded-xl bg-zinc-200 px-4 py-3 shadow-inner"
+                    type="password"
+                    name="password"
+                    placeholder="อย่างน้อย 8 ตัวอักษร"
+                  />
+                </div>
+                <div class="grid gap-2">
+                  <label class="font-semibold" for="confirm-password"
+                    >ยืนยันรหัสผ่าน</label
+                  >
+                  <input
+                    class="rounded-xl bg-zinc-200 px-4 py-3 shadow-inner"
+                    type="password"
+                    name="confirm-password"
+                    placeholder="อย่างน้อย 8 ตัวอักษร"
+                  />
+                </div>
+
+                <div>
+                  <a
+                    class="text-primary font-semibold"
+                    href="https://www.google.com"
+                    >ลืมรหัสผ่าน?</a
+                  >
+                </div>
+              </div>
+              <div class="grid grid-flow-col grid-cols-[1rem_1fr] gap-4">
+                <input type="checkbox" name="accept" value="true" />
+                <p>จดจำการเข้าสู่ระบบของฉัน</p>
+              </div>
+            </div>
+
+            <!--Button group-->
+            <div class="mx-auto grid grid-flow-row gap-4 sm:grid-flow-col">
+              <button
+                class="border-primary text-primary rounded-full border-2 px-4 py-2 text-lg font-medium"
+                type="reset"
+              >
+                รีเซ็ต
+              </button>
+              <button
+                class="bg-primary border-primary rounded-full border-2 px-4 py-2 text-lg font-medium text-white"
+                type="submit"
+              >
+                เข้าสู่ระบบ
+              </button>
+            </div>
+
+            <div class="text-center">
+              เป็นสมาชิกแล้ว?
+              <a class="text-primary font-semibold" href="">เข้าสู่ระบบ</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
