@@ -14,6 +14,209 @@
 
     <!--Google Fonts and Tailwind CSS-->
     <link href="/src/style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #account:checked ~ #account-content { display: block; }
+      #orders:checked ~ #orders-content { display: block; }
+      #wishlist:checked ~ #wishlist-content { display: block; }
+      #coupons:checked ~ #coupons-content { display: block; }
+    </style>
   </head>
-  <body></body>
+
+  <body>
+    <main>
+      <section class="flex flex-row">
+
+        <!-- Side Bar -->
+        <div class="flex-[3] bg-blue-200 border-r border-black">
+          <div class="flex flex-row border-b border-black py-2">
+            <img src="/assets/images/favicon-black-cat-colored.png" class="max-w-12 max-h-12 ml-2"/>
+            <img src="/assets/images/pickled-cat-text-logo.svg" class="min-w-40 min-h-5 max-w-40 max-h-5 mt-4 ml-2 mr-2"/>
+          </div>
+
+          <div class="flex flex-col justify-start mt-2">
+            <div class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4">
+              <label for="account" class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4 cursor-pointer">
+                <img src="/assets/images/user-icon.png" class="max-w-10 max-h-10"/>
+                <h2 class="font-semibold text-xl mt-1">My Account</h2>
+              </label>
+            </div>
+
+            <div class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4 cursor-pointer">
+              <label for="orders" class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4 cursor-pointer">
+                <img src="/assets/images/truck-icon.png" class="max-w-10 max-h-10"/>
+                <h2 class="font-semibold text-xl mt-1">Order History</h2>
+              </label>
+            </div>
+
+            <div class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4 cursor-pointer">
+              <label for="wishlist" class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4 cursor-pointer">
+                <img src="/assets/images/love-icon.png" class="max-w-10 max-h-10"/>
+                <h2 class="font-semibold text-xl mt-1">My Wishlist</h2>
+              </label>
+            </div>
+
+            <div class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4 cursor-pointer">
+              <label for="coupons" class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4 cursor-pointer">
+                <img src="/assets/images/coupon-icon.png" class="max-w-10 max-h-10"/>
+                <h2 class="font-semibold text-xl mt-1">My Coupons</h2>
+              </label>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Page -->
+        <div class="flex-[17] w-screen h-screen">
+
+          <input type="radio" id="account" name="page" class="hidden" />
+          <input type="radio" id="orders" name="page" class="hidden" checked />
+          <input type="radio" id="wishlist" name="page" class="hidden" />
+          <input type="radio" id="coupons" name="page" class="hidden" />
+
+          <!-- My Account Content -->
+          <div id="account-content" class="hidden [#account:checked~&]:block">
+            <div class="flex flex-col">
+              <div class="border-b border-black pl-4 py-1.5">
+                <h2 class="text-xl font-semibold">Personal Information</h2>
+                <h2 class="text-neutral-500">Manage your personal information</h2>
+              </div>
+  
+              <div class="mx-8 py-4 border-b border-neutral-300 flex flex-row">
+                <div class="flex-[2]">
+                  <h2>Name</h2>
+                </div>
+
+                <div class="flex-[7]">
+                  <h2>John Doe</h2>
+                </div>
+
+                <div class="flex-[1] flex justify-end">
+                  <a href="" class="text-blue-500">Edit</a>
+                </div>
+              </div>
+
+              <div class="mx-8 py-4 border-b border-neutral-300 flex flex-row">
+                <div class="flex-[2]">
+                  <h2>Email</h2>
+                </div>
+
+                <div class="flex-[7]">
+                  <h2>johndoe@gmail.com</h2>
+                </div>
+
+                <div class="flex-[1] flex justify-end">
+                  <a href="" class="text-blue-500">Edit</a>
+                </div>
+              </div>
+
+              <div class="mx-8 py-4 border-b border-neutral-300 flex flex-row">
+                <div class="flex-[2]">
+                  <h2>Phone Number</h2>
+                </div>
+
+                <div class="flex-[7]">
+                  <h2>097 777 7777</h2>
+                </div>
+
+                <div class="flex-[1] flex justify-end">
+                  <a href="" class="text-blue-500">Edit</a>
+                </div>
+              </div>
+
+              <div class="mx-8 py-4 border-b border-neutral-300 flex flex-row">
+                <div class="flex-[2]">
+                  <h2>Link Account</h2>
+                </div>
+
+                <div class="flex-[7] flex flex-col gap-4">
+                  <div class="flex flex-row gap-2">
+                    <img src="/assets/images/facebook_icon.png" class="max-w-6 max-h-6" />
+                    <h2 class="font-semibold">Facebook</h2>
+                  </div>
+
+                  <div class="flex flex-row gap-2">
+                    <img src="/assets/images/google_icon.png" class="max-w-6 max-h-6" />
+                    <h2 class="font-semibold">Google</h2>
+                  </div>
+                </div>
+
+                <div class="flex-[1] flex flex-col gap-4 text-right">
+                  <div>
+                    <a href="" class="text-neutral-500">Unlink</a>
+                  </div>
+                  
+                  <div>
+                    <a href="" class="text-blue-500">Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+    
+          <!-- Order History Content -->
+          <div id="orders-content" class="hidden peer-checked:block">
+            <div class="flex flex-col">
+
+              <input type="radio" id="all-orders" class="hidden" checked/>
+
+              <div class="border-b border-black pl-4 py-1.5">
+                <h2 class="text-xl font-semibold">Order History</h2>
+                <h2 class="text-neutral-500">Manage your orders</h2>
+              </div>
+
+              <div class="flex flex-row justify-start">
+                <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
+                  <label for="all-orders" class="">
+                    <h2>All</h2>
+                  </label>
+                </div>
+
+                <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
+                  <h2>Pending Payment</h2>
+                </div>
+
+                <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
+                  <h2>Preparing Order</h2>
+                </div>
+
+                <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
+                  <h2>On Route</h2>
+                </div>
+
+                <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
+                  <h2>Success</h2>
+                </div>
+
+                <div class="flex-[1] text-center hover:bg-neutral-200 cursor-pointer py-2">
+                  <h2>Cancelled</h2>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+
+          <div id="wishlist-content" class="hidden peer-checked:block">
+            <div class="flex flex-col">
+              <div class="border-b border-black pl-4 py-1.5">
+                <h2 class="text-xl font-semibold">My Wishlist</h2>
+                <h2 class="text-neutral-500">Check your wishlists</h2>
+              </div>
+            </div>
+          </div>
+
+          <div id="coupons-content" class="hidden peer-checked:block">
+            <div class="flex flex-col">
+              <div class="border-b border-black pl-4 py-1.5">
+                <h2 class="text-xl font-semibold">My Coupons</h2>
+                <h2 class="text-neutral-500">Your coupons</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
