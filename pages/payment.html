@@ -90,114 +90,192 @@
     <!-- Your content here -->
     <main>
       <!-- PC and Tablet here -->
-      <section class="not-sm:hidden grid grid-cols-2">
-        <div>
-          <h2 class="text-center font-semibold text-2xl p-4 m-4">Billing Name and Address</h2>
-          <form class="grid grid-cols-2 items-center gap-2 p-4 m-4">
-            <label for="firstname" class="text-right pr-2">First Name</label>
-            <input type="text" id="firstname" name="firstname" class="border rounded w-1/2">
-            <label for="lastname" class="text-right pr-2">Last Name</label>
-            <input type="text" id="lastname" name="lastname" class="border rounded w-1/2">
-            <label for="phonenumber" class="text-right pr-2">Phone Number</label>
-            <input type="text" id="phonenumber" name="phonenumber" class="border rounded w-1/2">
-            <label for="email" class="text-right pr-2">E-mail Address</label>
-            <input type="text" id="email" name="email" class="border rounded w-1/2">
-            <label for="address" class="text-right pr-2">Address</label>
-            <input type="text" id="address" name="address" class="border rounded w-1/2">
-            <label for="city" class="text-right pr-2">City</label>
-            <input type="text" id="city" name="city" class="border rounded w-1/2">
-            <label for="country" class="text-right pr-2">Country</label>
-            <input type="text" id="country" name="country" class="border rounded w-1/2">
-            <button type="button" class="bg-primary rounded-2xl w-1/2 text-white">Next</button>
+      <section class="not-sm:hidden">
+          <h2 class="m-4 p-4 text-center text-2xl font-semibold">
+            Billing Name and Address
+          </h2>
+          <form class="m-4 grid items-center gap-2 p-4">
+            <label class="pr-2" for="firstname">First Name</label>
+            <input
+              class="w-1/2 rounded border"
+              id="firstname"
+              type="text"
+              name="firstname"
+            />
+            <label class="pr-2" for="lastname">Last Name</label>
+            <input
+              class="w-1/2 rounded border"
+              id="lastname"
+              type="text"
+              name="lastname"
+            />
+            <label class="pr-2" for="phonenumber">Phone Number</label>
+            <input
+              class="w-1/2 rounded border"
+              id="phonenumber"
+              type="text"
+              name="phonenumber"
+            />
+            <label class="pr-2" for="email">E-mail Address</label>
+            <input
+              class="w-1/2 rounded border"
+              id="email"
+              type="text"
+              name="email"
+            />
+            <label class="pr-2" for="address">Address</label>
+            <input
+              class="w-1/2 rounded border"
+              id="address"
+              type="text"
+              name="address"
+            />
+            <label class="pr-2" for="city">City</label>
+            <input
+              class="w-1/2 rounded border"
+              id="city"
+              type="text"
+              name="city"
+            />
+            <label class="pr-2" for="country">Country</label>
+            <input
+              class="w-1/2 rounded border"
+              id="country"
+              type="text"
+              name="country"
+            />
+            <h2 class="m-4 p-4 text-center text-2xl font-semibold">
+              Payment Methods
+            </h2>
+            <label class="pr-2" for="cardName">Cardholder Name</label>
+            <input
+              class="w-1/2 rounded border"
+              id="cardName"
+              type="text"
+              name="cardName"
+            />
+            <label class="pr-2" for="creditCardNumber">Credit Card Number</label>
+            <input
+              class="w-1/2 rounded border"
+              id="creditCardNumber"
+              type="text"
+              name="creditCardNumber"
+            />
+            <label class="pr-2" for="cardExpiration">Expiration Date</label>
+            <input
+              class="w-1/2 rounded border"
+              id="cardExpiration"
+              type="month"
+              name="cardExpiration"
+            />
+            <label class="pr-2" for="cardSecureCode">Card Security Code</label>
+            <input
+              class="w-1/2 rounded border"
+              id="cardSecureCode"
+              type="text"
+              name="cardSecureCode"
+            />
+            <button
+              class="bg-primary w-1/2 rounded-2xl text-white"
+              type="button"
+            >
+              Place Order
+            </button>
           </form>
-        </div>
-        <div>
-          <h2 class="text-center font-semibold text-2xl p-4 m-4">Payment Methods</h2>
-          <form class="grid grid-cols-2 items-center gap-2 p-4 m-4">
-            <input type="radio" id="cod" name="paymentmethod" value="cod" class="justify-self-end">
-            <label for="cod" class="text-left">COD</label>
-            <input type="radio" name="paymentmethod" id="card" value="card" class="justify-self-end">
-            <label for="card" class="text-left">Credit Card</label>
-            <label for="cardName" class="text-right">Cardholder Name</label>
-            <input type="text" id="cardName" name="cardName" class="border rounded w-1/2">
-            <label for="creditCardNumber" class="text-right">Credit Card Number</label>
-            <input type="text" id="creditCardNumber" name="creditCardNumber" class="border rounded w-1/2">
-            <label for="cardExpiration" class="text-right">Card Expiration</label>
-            <input type="month" id="cardExpiration" name="cardExpiration" class="border rounded w-1/2">
-            <label for="cardSecureCode" class="text-right">Card Security Code</label>
-            <input type="text" id="cardSecureCode" name="cardSecureCode" class="border rounded w-1/2">
-            <button type="submit" class="rounded-2xl w-1/2 bg-primary text-white">Place Order</button>
-          </form>
-        </div>
       </section>
       <!-- Mobile here -->
-      <section class="hidden not-sm:grid grid-cols-1">
-        <h2 class="text-center font-semibold text-2xl p-4 m-4">Billing Name and Address</h2>
-        <form class="p-4">
-          <div class="grid grid-cols-2 p-4 items-center text-center">
-            <label for="firstname">First Name</label>
-            <input type="text" id="firstname" name="firstname" class="border rounded">
-          </div>
-          <div class="grid grid-cols-2 p-4 items-center text-center">
-            <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" name="lastname" class="border rounded">
-          </div>
-          <div  class="grid grid-cols-2 p-4 items-center text-center">
-            <label for="phonenumber">Phone Number</label>
-            <input type="text" id="phonenumber" name="phonenumber" class="border rounded">
-          </div>
-          <div class="grid grid-cols-2 p-4 items-center text-center">
-            <label for="email">E-mail Address</label>
-            <input type="text" id="email" name="email" class="border rounded">
-          </div>
-          <div class="grid grid-cols-2 p-4 items-center text-center">
-            <label for="address">Address</label>
-            <input type="text" id="address" name="address" class="border rounded">
-          </div>
-          <div class="grid grid-cols-2 p-4 items-center text-center">
-            <label for="city">City</label>
-            <input type="text" id="city" name="city" class="border rounded">
-          </div>
-          <div class="grid grid-cols-2 p-4 items-center text-center">
-            <label for="country">Country</label>
-            <input type="text" id="country" name="country" class="border rounded">
-          </div>
-          <div class="items-center text-center justify-center">
-            <button type="button" class="bg-primary rounded-2xl w-1/2 text-white">Next</button>
-          </div>
-        </form>
-        <h2 class="text-center font-semibold text-2xl p-4 m-4">Payment Methods</h2>
-        <form class="p-4">
-          <div class="grid grid-cols-2 p-4 items-center text-center">
-            <div class="flex items-center justify-center">
-              <label for="cod">COD</label>
-              <input type="radio" id="cod" name="payment">
-            </div>
-            <div class="flex items-center justify-center">
-              <label for="card">Credit Card</label>
-              <input type="radio" id="card" name="payment">
-            </div>
-          </div>
-          <div class="grid grid-cols-2 p-4 items-center text-center">
-            <label for="cardName">Cardholder Name</label>
-            <input type="text" id="cardName" name="cardName" class="border rounded">
-          </div>
-          <div class="grid grid-cols-2 p-4 items-center text-center">
-            <label for="creditCardNumber">Credit Card Number</label>
-            <input type="text" id="creditCardNumber" name="creditCardNumber" class="border rounded">
-          </div>
-          <div class="grid grid-cols-2 p-4 items-center text-center">
-            <label for="cardExpiration">Card Expiration</label>
-            <input type="month" id="cardExpiration" name="cardExpiration" class="border rounded">
-          </div>
-          <div class="grid grid-cols-2 p-4 items-center text-center">
-            <label for="cardSecureCode">Card Security Code</label>
-            <input type="text" id="cardSecureCode" name="cardSecureCode" class="border rounded">
-          </div>
-          <div class="items-center text-center justify-center">
-            <button type="submit" class="bg-primary rounded-2xl w-1/2 text-white">Place Order</button>
-          </div>
-        </form>
+      <section class="hidden grid-cols-1 not-sm:grid">
+        <h2 class="m-4 p-4 text-center text-2xl font-semibold">
+          Billing Name and Address
+        </h2>
+        <form class="m-4 grid items-center gap-2 p-4">
+            <label class="pr-2" for="firstname">First Name</label>
+            <input
+              class="w-1/2 rounded border"
+              id="firstname"
+              type="text"
+              name="firstname"
+            />
+            <label class="pr-2" for="lastname">Last Name</label>
+            <input
+              class="w-1/2 rounded border"
+              id="lastname"
+              type="text"
+              name="lastname"
+            />
+            <label class="pr-2" for="phonenumber">Phone Number</label>
+            <input
+              class="w-1/2 rounded border"
+              id="phonenumber"
+              type="text"
+              name="phonenumber"
+            />
+            <label class="pr-2" for="email">E-mail Address</label>
+            <input
+              class="w-1/2 rounded border"
+              id="email"
+              type="text"
+              name="email"
+            />
+            <label class="pr-2" for="address">Address</label>
+            <input
+              class="w-1/2 rounded border"
+              id="address"
+              type="text"
+              name="address"
+            />
+            <label class="pr-2" for="city">City</label>
+            <input
+              class="w-1/2 rounded border"
+              id="city"
+              type="text"
+              name="city"
+            />
+            <label class="pr-2" for="country">Country</label>
+            <input
+              class="w-1/2 rounded border"
+              id="country"
+              type="text"
+              name="country"
+            />
+            <h2 class="m-4 p-4 text-center text-2xl font-semibold">
+              Payment Methods
+            </h2>
+            <label class="pr-2" for="cardName">Cardholder Name</label>
+            <input
+              class="w-1/2 rounded border"
+              id="cardName"
+              type="text"
+              name="cardName"
+            />
+            <label class="pr-2" for="creditCardNumber">Credit Card Number</label>
+            <input
+              class="w-1/2 rounded border"
+              id="creditCardNumber"
+              type="text"
+              name="creditCardNumber"
+            />
+            <label class="pr-2" for="cardExpiration">Expiration Date</label>
+            <input
+              class="w-1/2 rounded border"
+              id="cardExpiration"
+              type="month"
+              name="cardExpiration"
+            />
+            <label class="pr-2" for="cardSecureCode">Card Security Code</label>
+            <input
+              class="w-1/2 rounded border"
+              id="cardSecureCode"
+              type="text"
+              name="cardSecureCode"
+            />
+            <button
+              class="bg-primary w-1/2 rounded-2xl text-white"
+              type="button"
+            >
+              Place Order
+            </button>
+          </form>
       </section>
     </main>
 
