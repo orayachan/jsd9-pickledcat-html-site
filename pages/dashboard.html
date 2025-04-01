@@ -14,7 +14,6 @@
 
     <!--Google Fonts and Tailwind CSS-->
     <link href="/src/style.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
       #account:checked ~ #account-content { display: block; }
       #orders:checked ~ #orders-content { display: block; }
@@ -32,11 +31,11 @@
 
   <body>
     <main>
-      <section class="flex flex-row">
+      <section class="flex flex-row ">
 
         <!-- Side Bar -->
-        <div class="flex-[3] bg-blue-200 border-r border-black">
-          <div class="flex flex-row border-b border-black py-2">
+        <div class="flex-[3] bg-secondary shadow-md shadow-gray-500">
+          <div class="flex flex-row shadow-md py-2">
             <img src="/assets/images/favicon-black-cat-colored.png" class="max-w-12 max-h-12 ml-2"/>
             <img src="/assets/images/pickled-cat-text-logo.svg" class="min-w-40 min-h-5 max-w-40 max-h-5 mt-4 ml-2 mr-2"/>
           </div>
@@ -44,29 +43,29 @@
           <div class="flex flex-col justify-start mt-2">
             <div class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4">
               <label for="account" class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4 cursor-pointer">
-                <img src="/assets/images/user-icon.png" class="max-w-10 max-h-10"/>
-                <h2 class="font-semibold text-xl mt-1">My Account</h2>
+                <img src="/assets/images/medal.png" class="max-w-10 max-h-10 mr-2"/>
+                <h2 class=" text-xl mt-1.5">My Account</h2>
               </label>
             </div>
 
             <div class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4 cursor-pointer">
               <label for="orders" class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4 cursor-pointer">
-                <img src="/assets/images/truck-icon.png" class="max-w-10 max-h-10"/>
-                <h2 class="font-semibold text-xl mt-1">Order History</h2>
+                <img src="/assets/images/cargo-truck.png" class="max-w-10 max-h-10 mr-2"/>
+                <h2 class=" text-xl mt-1.5">Order History</h2>
               </label>
             </div>
 
             <div class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4 cursor-pointer">
               <label for="wishlist" class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4 cursor-pointer">
-                <img src="/assets/images/love-icon.png" class="max-w-10 max-h-10"/>
-                <h2 class="font-semibold text-xl mt-1">My Wishlist</h2>
+                <img src="/assets/images/shopping-cart.png" class="max-w-10 max-h-10 mr-2"/>
+                <h2 class=" text-xl mt-1.5">My Wishlist</h2>
               </label>
             </div>
 
             <div class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4 cursor-pointer">
               <label for="coupons" class="hover:bg-gray-200 flex flex-row gap-2 p-1 pl-4 cursor-pointer">
-                <img src="/assets/images/coupon-icon.png" class="max-w-10 max-h-10"/>
-                <h2 class="font-semibold text-xl mt-1">My Coupons</h2>
+                <img src="/assets/images/gift-card.png" class="max-w-10 max-h-10 mr-2"/>
+                <h2 class=" text-xl mt-1.5">My Coupons</h2>
               </label>
             </div>
 
@@ -84,7 +83,7 @@
           <!-- My Account Content -->
           <div id="account-content" class="hidden [#account:checked~&]:block">
             <div class="flex flex-col">
-              <div class="border-b border-black pl-4 py-1.5">
+              <div class="shadow-md pl-4 py-1.5">
                 <h2 class="text-xl font-semibold">Personal Information</h2>
                 <h2 class="text-neutral-500">Manage your personal information</h2>
               </div>
@@ -173,7 +172,7 @@
               <input type="radio" id="success-orders" name="content" class="hidden"/>
               <input type="radio" id="cancelled-orders" name="content" class="hidden"/>
 
-              <div class="border-b border-black pl-4 py-1.5">
+              <div class="shadow-md pl-4 py-1.5">
                 <h2 class="text-xl font-semibold">Order History</h2>
                 <h2 class="text-neutral-500">Manage your orders</h2>
               </div>
@@ -217,7 +216,7 @@
               </div>
 
               <div id="all-orders-content" class="hidden [#all-orders:checked~&]:block">
-                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                <div class="m-6 flex flex-row shadow-md rounded-xl p-2">
                   <div class="flex-[1]">
                     <img src="/assets/images/product-list/5-lobster-cat-jelly.png " class="max-w-16 max-h-16">
                   </div>
@@ -236,7 +235,7 @@
                   </div>
                 </div>
 
-                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                <div class="m-6 flex flex-row shadow-md rounded-xl p-2">
                   <div class="flex-[1]">
                     <img src="/assets/images/product-list//1-pickled-tuna feast.webp " class="max-w-16 max-h-16">
                   </div>
@@ -255,7 +254,7 @@
                   </div>
                 </div>
 
-                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                <div class="m-6 flex flex-row shadow-md rounded-xl p-2">
                   <div class="flex-[1]">
                     <img src="/assets/images/product-list//3-freeze-dried-salmon-cube.png " class="max-w-16 max-h-16">
                   </div>
@@ -274,7 +273,7 @@
                   </div>
                 </div>
 
-                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                <div class="m-6 flex flex-row shadow-md rounded-xl p-2">
                   <div class="flex-[1]">
                     <img src="/assets/images/product-list//23-vintage-pickled-cat-clock.jpg " class="max-w-16 max-h-16">
                   </div>
@@ -293,7 +292,7 @@
                   </div>
                 </div>
 
-                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                <div class="m-6 flex flex-row shadow-md rounded-xl p-2">
                   <div class="flex-[1]">
                     <img src="/assets/images/product-list//4-sweet-potato-cat-treat.png " class="max-w-16 max-h-16">
                   </div>
@@ -314,7 +313,7 @@
               </div>
 
               <div id="pending-orders-content" class="hidden [#pending-orders:checked~&]:block">
-                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                <div class="m-6 flex flex-row shadow-md rounded-xl p-2">
                   <div class="flex-[1]">
                     <img src="/assets/images/product-list/5-lobster-cat-jelly.png " class="max-w-16 max-h-16">
                   </div>
@@ -335,7 +334,7 @@
               </div>
 
               <div id="preparing-orders-content" class="hidden [#preparing-orders:checked~&]:block">
-                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                <div class="m-6 flex flex-row shadow-md rounded-xl p-2">
                   <div class="flex-[1]">
                     <img src="/assets/images/product-list//1-pickled-tuna feast.webp " class="max-w-16 max-h-16">
                   </div>
@@ -356,7 +355,7 @@
               </div>
 
               <div id="on-route-orders-content" class="hidden [#on-route-orders:checked~&]:block">
-                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                <div class="m-6 flex flex-row shadow-md rounded-xl p-2">
                   <div class="flex-[1]">
                     <img src="/assets/images/product-list//3-freeze-dried-salmon-cube.png " class="max-w-16 max-h-16">
                   </div>
@@ -377,7 +376,7 @@
               </div>
 
               <div id="success-orders-content" class="hidden [#success-orders:checked~&]:block">
-                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                <div class="m-6 flex flex-row shadow-md rounded-xl p-2">
                   <div class="flex-[1]">
                     <img src="/assets/images/product-list//23-vintage-pickled-cat-clock.jpg " class="max-w-16 max-h-16">
                   </div>
@@ -398,7 +397,7 @@
               </div>
 
               <div id="cancelled-orders-content" class="hidden [#cancelled-orders:checked~&]:block">
-                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                <div class="m-6 flex flex-row shadow-md rounded-xl p-2">
                   <div class="flex-[1]">
                     <img src="/assets/images/product-list//4-sweet-potato-cat-treat.png " class="max-w-16 max-h-16">
                   </div>
@@ -423,13 +422,13 @@
 
           <div id="wishlist-content" class="hidden peer-checked:block">
             <div class="flex flex-col">
-              <div class="border-b border-black pl-4 py-1.5">
+              <div class="shadow-md pl-4 py-1.5">
                 <h2 class="text-xl font-semibold">My Wishlist</h2>
                 <h2 class="text-neutral-500">Check your wishlists</h2>
               </div>
 
               <div>
-                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                <div class="m-6 flex flex-row shadow-md rounded-xl p-2">
                   <div class="flex-[1]">
                     <img src="/assets/images/product-list//4-sweet-potato-cat-treat.png " class="max-w-16 max-h-16">
                   </div>
@@ -442,11 +441,11 @@
                   </div>
 
                   <div class="flex-[1] text-center mt-3">
-                    <button class="hover:bg-neutral-200 px-8 py-2 rounded border border-black">Go</button>
+                    <button class="hover:bg-neutral-200 px-8 py-2 rounded border border-black cursor-pointer">Go</button>
                   </div>
                 </div>
 
-                <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+                <div class="m-6 flex flex-row shadow-md rounded-xl p-2">
                   <div class="flex-[1]">
                     <img src="/assets/images/product-list//9-pickled-mouse-chase.jpg " class="max-w-16 max-h-16">
                   </div>
@@ -459,7 +458,7 @@
                   </div>
 
                   <div class="flex-[1] text-center mt-3">
-                    <button class="hover:bg-neutral-200 px-8 py-2 rounded border border-black">Go</button>
+                    <button class="hover:bg-neutral-200 px-8 py-2 rounded border border-black cursor-pointer">Go</button>
                   </div>
                 </div>
               </div>
@@ -468,15 +467,15 @@
 
           <div id="coupons-content" class="hidden peer-checked:block">
             <div class="flex flex-col">
-              <div class="border-b border-black pl-4 py-1.5">
+              <div class="shadow-md pl-4 py-1.5">
                 <h2 class="text-xl font-semibold">My Coupons</h2>
                 <h2 class="text-neutral-500">Your coupons</h2>
               </div>
             </div>
 
-            <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+            <div class="m-6 flex flex-row shadow-md rounded-xl p-2">
               <div class="flex-[1] ml-4">
-                <img src="/assets/images//coupon-icon.png " class="max-w-16 max-h-16">
+                <img src="/assets/images//discount.png " class="max-w-16 max-h-16">
               </div>
 
               <div class="flex-[4] pt-2">
@@ -487,13 +486,13 @@
               </div>
 
               <div class="flex-[1] text-center mt-3">
-                <button class="hover:bg-neutral-200 px-8 py-2 rounded border border-black">USE</button>
+                <button class="hover:bg-neutral-200 px-8 py-2 rounded border border-black cursor-pointer">USE</button>
               </div>
             </div>
 
-            <div class="m-6 flex flex-row border border-black rounded-xl p-2">
+            <div class="m-6 flex flex-row shadow-md rounded-xl p-2">
               <div class="flex-[1] ml-4">
-                <img src="/assets/images//coupon-icon.png " class="max-w-16 max-h-16">
+                <img src="/assets/images//discount.png " class="max-w-16 max-h-16">
               </div>
 
               <div class="flex-[4] pt-2">
@@ -504,7 +503,7 @@
               </div>
 
               <div class="flex-[1] text-center mt-3">
-                <button class="hover:bg-neutral-200 px-8 py-2 rounded border border-black">USE</button>
+                <button class="hover:bg-neutral-200 px-8 py-2 rounded border border-black cursor-pointer">USE</button>
               </div>
             </div>
           </div>
